@@ -3,13 +3,13 @@
 
 **INTEGRANTES:**
 
-*Mayumi Yuvinca Nina Urquiola*
+*- Mayumi Yuvinca Nina Urquiola*
 
-*Gael Aracely Condori Tipola*
+*- Gael Aracely Condori Tipola*
 
-*Eliana Vargas Rojas*
+*- Eliana Vargas Rojas*
 
-*Jose Pozo Silva*
+*- Jose Pozo Silva*
 
 
 **DESCRIPCIÓN**
