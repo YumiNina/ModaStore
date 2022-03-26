@@ -1,9 +1,16 @@
 # ModaStore
-****# MODA STORE
-** Mayumi Yuvinca Nina Urquiola **
-** Gael Aracely Condori Tipola **
-** Eliana Vargas Rojas **
-** Jose Pozo Silva **
+**# MODA STORE**
+
+**INTEGRANTES:**
+
+*Mayumi Yuvinca Nina Urquiola*
+
+*Gael Aracely Condori Tipola*
+
+*Eliana Vargas Rojas*
+
+*Jose Pozo Silva*
+
 **DESCRIPCIÓN**
 
 El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de inventario  y  venta de prendas en la tienda.
