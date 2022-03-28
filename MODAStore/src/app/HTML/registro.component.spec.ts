@@ -8,10 +8,25 @@ Component(
   })
 export class registroComponent implements OnInit {
 
-  constructor(){}
+  constructor(private authService : AuthService){}
+  private user: UserInterface ={
+    ci:"",
+    nombre:"",
+    email:"",
+    password:""
+  };
+  ngOnInit():  {}
+  onRegister(): void{
 
-  ngOnInit():  {
-      
+    this.authService.registerUser(
+this.user.ci,
+this.user.nombre,
+this.user.email,
+this.user.password,
+    )
+.subcribe(user {
+console.log(user);
+})
   }
 }
 
