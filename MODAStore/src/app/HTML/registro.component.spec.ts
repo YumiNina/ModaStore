@@ -6,5 +6,12 @@ Component(
     templateUrl: '.registro.component.html',
     styleUrls: ['.registro.component.css']
   })
-export class registrocomponent 
+export class registroComponent implements OnInit {
+
+  constructor(){}
+
+  ngOnInit():  {
+      
+  }
+}
 
