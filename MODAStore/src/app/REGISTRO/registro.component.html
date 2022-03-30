@@ -1,36 +1,36 @@
-<section id=" register" class="mb-5">
+<section id=" Registro" class="mb-5">
   <div class="container">
    <div class=" row">
      <div class=" col-xs-12 col-md-4 mx-auto">
-        <div class="card register">
+        <div class="card Registro>
           <div class="card">
             <div class=" card-body text-center">
-              <form action=" ">
+              <form #formRegistro="ngForm" ( ngSubmit)="onRegistro()">
                 <h1 class="h3 mb-3 font-weight-normal "> Registro</h1>
                   <div class="form-group">
 
                    
                     <input type="text" id="nombre" name="nombre" class="form-control"
-                    placeholder="Nombre" required> 
+                    placeholder="Nombre" [(ngModel)]="MODAStore.nombre"required> 
                                    </div>
 
                                    <input type="text" id="ci" name="Carnet de identidad" class="form-control"
-                                   placeholder="ci" required> 
+                                   placeholder="ci" [(ngModel)]="MODAStore.Carnetdeidentidad"required> 
                                                   </div>
 
 <div class="form-group">
 <input type="email" id="email" name="Email" class="form-control"
-placeholder="Email" required>
+placeholder="Email" [(ngModel)]="MODAStore.email"  required>
 
 </div>
 <div class="form-group">
   <input type="password" id="password" name="Contraseña"
-  class="form-control" placeholder="password" required>
+  class="form-control" placeholder="password" " [(ngModel)]="MODAStore.password"required>
 </div>
 <button type="submit" class="btn btn-lg btn-primary"
 btn-block>Registrar</button>
 <div class="form-group">
-  <a routerLink="/html/login" class="form-control login-user ">Ya tiene una cuenta?
+  <a routerLink="/html/login" class="form-control login-MODAStore ">Ya tiene una cuenta?
   </a>  
 </div>
               </form>
