@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './HTML/app.component-MenuNavBar.html',
-  styleUrls:['./CSS/app.component-Style-MenuNavBar.css']
+  templateUrl: './nav-bar1/nav-bar1.component.html',
+  styleUrls:['./nav-bar1/nav-bar1.component.css']
 
 })
 export class AppComponent {
