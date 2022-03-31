@@ -1,7 +1,6 @@
 # ModaStore
 
-
-                       **# MODA STORE**
+  **# MODA STORE**
 **********************************************************************************************************************************************************************
 
 **INTEGRANTES:**
@@ -34,6 +33,7 @@ Los administradores podrán realizar peticiones de inventarios al sistema en el 
 
 El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de inventario  y  venta de prendas en la tienda.
 
+**********************************************************************************************************************************************************************
 
 
 **HERRAMIENTAS**
@@ -56,7 +56,7 @@ El proyecto a desarrollar es un sistema web, el cual se encargará de la gestió
 
 - Repositorio de Codigo: Github
 
-
+**********************************************************************************************************************************************************************
 
 **DIAGRAMA**
 
