@@ -10,4 +10,4 @@ export class AppComponent {
   title = 'MODAStore';
   imgLogo = '/MODAStore/src/app/assets/logo-empresa.png';
 }
-5
+

@@ -17,7 +17,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 // Services
-import { DataApiService } from 'src/app/services/data-api.service';
+
 import { ModalComponent } from './components/modal/modal.component';
 import { TruncateTextPipe } from './pipes/truncate-text.pipe';
 
