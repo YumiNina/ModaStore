@@ -26,7 +26,7 @@ El proyecto a desarrollar es un sistema web, el cual se encargará de la gestió
 El sistema WEb tendrá la capacidad de realizar inventarios de productos.
 Los clientes podrán acceder al sistema y realizar compras utilizando su cuenta de google.
 Los administradores podrán realizar peticiones de inventarios al sistema en el rango de fechas que desea.
-
+**********************************************************************************************************************************************************************
 
 
 **LIMITES**
