@@ -2,21 +2,21 @@ import { Component, OnInit } from '@angular/core';
 
 Component(
   {
-    selector:'app-register',
+    selector:'app-Registro',
     templateUrl: '.registro.component.html',
     styleUrls: ['.registro.component.css']
   })
-export class registroComponent implements OnInit {
+export class RegistroComponent implements OnInit {
 
   constructor(private authService : AuthService){}
-  private user: UserInterface ={
+  private user: MODAStoreInterface ={
     ci:"",
     nombre:"",
     email:"",
     password:""
   };
   ngOnInit():  {}
-  onRegister(): void{
+  onRegistro(): void{
 
     this.authService.registerUser(
 this.user.ci,
@@ -24,9 +24,13 @@ this.user.nombre,
 this.user.email,
 this.user.password,
     )
-.subcribe(user {
-console.log(user);
+.subcribe(MODAStorder {
+console.log(MODAStorder);
 })
   }
+}
+
+function MODAStorder(MODAStorder: any) {
+  throw new Error('Function not implemented.');
 }
 
