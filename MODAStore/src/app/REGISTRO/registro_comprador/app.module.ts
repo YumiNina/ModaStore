@@ -1,10 +1,11 @@
+import { NavBar1Component } from './../../nav-bar1/nav-bar1.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from '../app.component';
+import { AppComponent } from './app.component';
+import {Appnavbar1Component} from "../nav-bar1/nav-bar1.component";
 import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { OffersComponent } from './components/offers/offers.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { DetailsBookComponent } from './components/details-book/details-book.component';
