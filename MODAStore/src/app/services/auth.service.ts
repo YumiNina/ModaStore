@@ -12,7 +12,7 @@ export class DataApiMODASTOREService {
 
   constructor(private http: HttpComprador) { }
  getAllComprador(){
-const url_api ="http://localhost:3000/api/modastore";
+const url_api ="http://localhost:4200/api/modastore";
 return this.http.get(url_api);
 
  } 
