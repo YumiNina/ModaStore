@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrincipalComponent } from './principal.component';
+import { PrincipalComponent } from './principal1.component';
 
-describe('PrincipalComponent', () => {
+describe('Principal1Component', () => {
   let component: PrincipalComponent;
   let fixture: ComponentFixture<PrincipalComponent>;
 

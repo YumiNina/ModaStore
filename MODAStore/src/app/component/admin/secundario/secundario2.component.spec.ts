@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SecundarioComponent } from './secundario.component';
+import { SecundarioComponent } from './secundario2.component';
 
-describe('SecundarioComponent', () => {
+describe('Secundario2Component', () => {
   let component: SecundarioComponent;
   let fixture: ComponentFixture<SecundarioComponent>;
 

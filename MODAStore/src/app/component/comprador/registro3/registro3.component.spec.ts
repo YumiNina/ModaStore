@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegistroComponent } from './registro.component';
+import { RegistroComponent } from './registro3.component';
 
-describe('RegistroComponent', () => {
+describe('Registro3Component', () => {
   let component: RegistroComponent;
   let fixture: ComponentFixture<RegistroComponent>;
 
