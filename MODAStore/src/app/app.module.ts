@@ -21,10 +21,9 @@ import { SecundarioComponent } from './component/admin/secundario/secundario2.co
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { Page404Component } from './component/page404/page404.component';
-import { DataApiMODASTOREService } from './services/data-api-modastore.service';
-
+import { HttpClientModule } from '@angular/common/http';
 //services
-
+import { DataApiMODASTOREService } from './services/data-api-modastore.service';
 
 @NgModule({
   declarations: [
