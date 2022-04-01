@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { NavBar1Component } from './nav-bar1/nav-bar1.component';
-import { MenuComponent } from './component/menu/menu.component';
+import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
+
 import { NovedadesComponent } from './component/novedades/novedades.component';
 import { MujerComponent } from './component/mujer/mujer.component';
 import { NinhaComponent } from './component/mujer/ninha/ninha.component';
@@ -21,12 +21,16 @@ import { SecundarioComponent } from './component/admin/secundario/secundario2.co
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { Page404Component } from './component/page404/page404.component';
+import { DataApiMODASTOREService } from './services/data-api-modastore.service';
+
+//services
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBar1Component,
-    MenuComponent,
+
     NovedadesComponent,
     MujerComponent,
     NinhaComponent,
@@ -47,7 +51,7 @@ import { Page404Component } from './component/page404/page404.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DataApiMODASTOREService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

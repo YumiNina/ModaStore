@@ -17,7 +17,7 @@ import { OutletComponent } from './component/outlet/outlet.component';
 import { Page404Component } from './component/page404/page404.component';
 import { UnisexComponent } from './component/unisex/unisex.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
-import { NavBar1Component } from './nav-bar1/nav-bar1.component';
+import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 
 const routes: Routes = [
 
