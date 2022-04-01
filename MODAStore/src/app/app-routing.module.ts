@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
-import { Login1Component } from './component/admin/principal/login1/login1.component';
+import { Login1Component } from "./component/admin/principal/login1/Login1Component";
 import { PrincipalComponent } from './component/admin/principal/principal.component';
 import { Registro1Component } from './component/admin/principal/registro1/registro1.component';
-import { SecundarioComponent } from './component/admin/secundario/secundario2.component';
+import { SecundarioComponent } from './component/admin/secundario/secundario.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { HombreComponent } from './component/hombre/hombre.component';
 import { NinhoComponent } from './component/hombre/ninho/ninho.component';
@@ -15,8 +15,14 @@ import { OfertasComponent } from './component/ofertas/ofertas.component';
 import { OutletComponent } from './component/outlet/outlet.component';
 import { Page404Component } from './component/page404/page404.component';
 import { UnisexComponent } from './component/unisex/unisex.component';
-import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
+import { Login2Component } from './component/admin/secundario/login2/login2.component';
+import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
+import { Login3Component } from './component/comprador/login3/login3.component';
+import { Registro3Component } from './component/comprador/registro3/registro3.component';
+import { Login4Component } from './component/vendedor/login4/login4.component';
+import { Registro4Component } from './component/vendedor/registro4/registro4.component';
+import { VendedorComponent } from './component/vendedor/vendedor.component';
 
 const routes: Routes = [
 
@@ -33,7 +39,7 @@ const routes: Routes = [
   { path: "comprador/registro3", component: Registro3Component },
   { path: "hombre", component: HombreComponent },
   { path: "hombre/ninho", component: NinhoComponent },
-  { path: "mujer/ninha", component: MujerComponent },
+  { path: "mujer/ninha", component: MujerComponent }, 
   { path: "mujer/ninha", component: NinhaComponent },
   { path: "novedades", component: NovedadesComponent },
   { path: "ofertas", component: OfertasComponent },

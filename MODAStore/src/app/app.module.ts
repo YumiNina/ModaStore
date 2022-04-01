@@ -17,7 +17,7 @@ import { AdminComponent } from './component/admin/admin.component';
 import { PrincipalComponent } from './component/admin/principal/principal.component';
 import { LoginComponent } from './component/admin/principal/login1/login1.component';
 import { RegistroComponent } from './component/admin/principal/registro1/registro1.component';
-import { SecundarioComponent } from './component/admin/secundario/secundario2.component';
+import { SecundarioComponent } from './component/admin/secundario/secundario.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { Page404Component } from './component/page404/page404.component';
