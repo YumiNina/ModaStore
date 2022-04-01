@@ -29,7 +29,6 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
   declarations: [
     AppComponent,
     NavBar1Component,
-
     NovedadesComponent,
     MujerComponent,
     NinhaComponent,

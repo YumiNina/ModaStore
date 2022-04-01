@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBar1Component implements OnInit {
 
-  constructor(private DataApiMODASTOREService: DataApiMODASTOREService) { }
+  //constructor(private DataApiMODASTOREService: DataApiMODASTOREService) { }
 
   ngOnInit(): void {
-     this.getlistComprador();
+    // this.getlistComprador();
   }
 
 getlistComprador(){
-  this.DataApiMODASTOREService.getAllComprador().subscribe(Comprador => console.log = (comprador));
+  //this.DataApiMODASTOREService.getAllComprador().subscribe(Comprador => console.log = (comprador));
 
 
 
