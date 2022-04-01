@@ -29,13 +29,6 @@ import { AppComponent } from "./app.component";
 import { FormsModule } from '@angular/forms';
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
-<<<<<<< HEAD
-import { AppComponent } from "./AppComponent";
-
-
-=======
->>>>>>> b51a8a261183b8f713d0db32b6d0694dedb02d31
-
 @NgModule({
    declarations: [
     NavBar1Component,
