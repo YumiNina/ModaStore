@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
-import { LoginComponent } from './component/admin/principal/login1/login1.component';
-import { PrincipalComponent } from './component/admin/principal/principal1.component';
-import { RegistroComponent } from './component/admin/principal/registro1/registro.component';
+import { Login1Component } from './component/admin/principal/login1/login1.component';
+import { PrincipalComponent } from './component/admin/principal/principal.component';
+import { Registro1Component } from './component/admin/principal/registro1/registro1.component';
 import { SecundarioComponent } from './component/admin/secundario/secundario2.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { HombreComponent } from './component/hombre/hombre.component';
 import { NinhoComponent } from './component/hombre/ninho/ninho.component';
-import { MenuComponent } from './component/menu/menu.component';
 import { MujerComponent } from './component/mujer/mujer.component';
 import { NinhaComponent } from './component/mujer/ninha/ninha.component';
 import { NovedadesComponent } from './component/novedades/novedades.component';
@@ -24,17 +23,16 @@ const routes: Routes = [
   { path: "", component: NavBar1Component },
   { path: "administrador", component: AdminComponent },
   { path: "admin/principal", component: PrincipalComponent },
-  { path: "admin/principal/login1", component: LoginComponent },
-  { path: "admin/principal/registro1", component: RegistroComponent },
+  { path: "admin/principal/login1", component: Login1Component },
+  { path: "admin/principal/registro1", component: Registro1Component },
   { path: "admin/secundario", component: SecundarioComponent },
-  { path: "admin/secundario/login2", component: LoginComponent },
-  { path: "admin/secundario/registro2", component: RegistroComponent },
+  { path: "admin/secundario/login2", component: Login2Component },
+  { path: "admin/secundario/registro2", component: Registro2Component },
   { path: "comprador", component: CompradorComponent },
-  { path: "comprador/login3", component: LoginComponent },
-  { path: "comprador/registro3", component: RegistroComponent },
+  { path: "comprador/login3", component: Login3Component },
+  { path: "comprador/registro3", component: Registro3Component },
   { path: "hombre", component: HombreComponent },
   { path: "hombre/ninho", component: NinhoComponent },
-  { path: "menu", component: MenuComponent },
   { path: "mujer/ninha", component: MujerComponent },
   { path: "mujer/ninha", component: NinhaComponent },
   { path: "novedades", component: NovedadesComponent },
@@ -43,8 +41,8 @@ const routes: Routes = [
   { path: "**", component: Page404Component },
   { path: "unisex", component: UnisexComponent },
   { path: "vendedor", component: VendedorComponent },
-  { path: "vendedor/login4", component: LoginComponent },
-  { path: "vendedor/registro4", component: RegistroComponent },
+  { path: "vendedor/login4", component: Login4Component },
+  { path: "vendedor/registro4", component: Registro4Component },
 
 
 
@@ -53,6 +51,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
 
 
 })
