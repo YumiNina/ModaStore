@@ -22,7 +22,7 @@ import { Registro3Component } from './component/comprador/registro3/registro3.co
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
-import { NavBar1Component } from './nav-bar1/nav-bar1.component';
+import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 
 const routes: Routes = [
 
@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: "admin/principal", component: PrincipalComponent },
   { path: "admin/principal/login1", component: Login1Component },
   { path: "admin/principal/registro1", component: Registro1Component },
-  { path: "admin/secundario", component: SecundarioComponent }
+  { path: "admin/secundario", component: SecundarioComponent },
   { path: "admin/secundario/login2", component: Login2Component },
   { path: "admin/secundario/registro2", component: Registro2Component },
   { path: "comprador", component: CompradorComponent },
