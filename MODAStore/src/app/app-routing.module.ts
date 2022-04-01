@@ -15,7 +15,6 @@ import { OfertasComponent } from './component/ofertas/ofertas.component';
 import { OutletComponent } from './component/outlet/outlet.component';
 import { Page404Component } from './component/page404/page404.component';
 import { UnisexComponent } from './component/unisex/unisex.component';
-import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
 import { Login3Component } from './component/comprador/login3/login3.component';
@@ -23,6 +22,7 @@ import { Registro3Component } from './component/comprador/registro3/registro3.co
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
+import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 
 const routes: Routes = [
 
