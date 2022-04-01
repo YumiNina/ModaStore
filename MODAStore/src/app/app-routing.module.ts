@@ -26,12 +26,12 @@ import { VendedorComponent } from './component/vendedor/vendedor.component';
 
 const routes: Routes = [
 
-  { path: "", component: NavBar1Component },
+  { path: " ", component: NavBar1Component },
   { path: "administrador", component: AdminComponent },
   { path: "admin/principal", component: PrincipalComponent },
   { path: "admin/principal/login1", component: Login1Component },
   { path: "admin/principal/registro1", component: Registro1Component },
-  { path: "admin/secundario", component: SecundarioComponent },
+  { path: "admin/secundario", component: SecundarioComponent }
   { path: "admin/secundario/login2", component: Login2Component },
   { path: "admin/secundario/registro2", component: Registro2Component },
   { path: "comprador", component: CompradorComponent },

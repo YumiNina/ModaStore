@@ -15,15 +15,23 @@ import { OfertasComponent } from './component/ofertas/ofertas.component';
 import { OutletComponent } from './component/outlet/outlet.component';
 import { AdminComponent } from './component/admin/admin.component';
 import { PrincipalComponent } from './component/admin/principal/principal.component';
-import { LoginComponent } from './component/admin/principal/login1/login1.component';
-import { RegistroComponent } from './component/admin/principal/registro1/registro1.component';
+import { Login1Component } from './component/admin/principal/login1/Login1Component';
+import { Registro1Component } from './component/admin/principal/registro1/registro1.component';
 import { SecundarioComponent } from './component/admin/secundario/secundario.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
 import { Page404Component } from './component/page404/page404.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Login2Component } from './component/admin/secundario/login2/login2.component';
+import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
+import { Login3Component } from './component/comprador/login3/login3.component';
+import { Registro3Component } from './component/comprador/registro3/registro3.component';
+import { Login4Component } from './component/vendedor/login4/login4.component';
+import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
+
+
 
 @NgModule({
   declarations: [
@@ -39,8 +47,14 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
     OutletComponent,
     AdminComponent,
     PrincipalComponent,
-    LoginComponent,
-    RegistroComponent,
+    Login1Component,
+    Registro1Component,
+    Login2Component,
+    Registro2Component,
+    Login3Component,
+    Registro3Component,
+    Login4Component,
+    Registro4Component,
     SecundarioComponent,
     VendedorComponent,
     CompradorComponent,
