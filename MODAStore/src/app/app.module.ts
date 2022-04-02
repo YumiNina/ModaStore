@@ -1,7 +1,9 @@
 /* Imports por defecto de angular*/
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from "./app.component";
 
 /* imports de formularios de angular*/
@@ -38,6 +40,7 @@ import { Registro4Component } from './component/vendedor/registro4/registro4.com
 
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
+
 @NgModule({
    declarations: [
     NavBar1Component,
@@ -77,5 +80,8 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
   providers: [DataApiMODASTOREService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}
 

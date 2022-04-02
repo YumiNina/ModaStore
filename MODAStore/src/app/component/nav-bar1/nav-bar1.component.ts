@@ -1,22 +1,14 @@
 import { DataApiMODASTOREService } from '../../services/data-api-modastore.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
+
   selector: 'app-nav-bar1',
   templateUrl: './nav-bar1.component.html',
   styleUrls: ['./nav-bar1.component.css']
 })
-export class NavBar1Component implements OnInit {
+export class NavBar1Component {
 
-//  constructor(private DataApiMODASTOREService: DataApiMODASTOREService) { }
 
-  ngOnInit(): void {
-  // this.getlistComprador();
-  }
-
-//getlistComprador()
-
- // this.DataApiMODASTOREService.getAllComprador().subscribe(Comprador => console.log = (Comprador));
   }
 

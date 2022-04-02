@@ -1,11 +1,17 @@
+
 import { Component } from '@angular/core';
 
 
 
+
 @Component({
-    selector: 'app-root',
-    templateUrl: './component/nav-bar1/nav-bar1.component.html',
-    styleUrls: ['./component/nav-bar1/nav-bar1.component.css']
+    selector: 'app-component',
+    ///templateUrl: './app.component.html',
+   // styleUrls: ['./component/inicio/inicio.component.css']
+
+
+    templateUrl: './component/inicio/inicio.component.html',
+    styleUrls: ['./component/inicio/inicio.component.css']
 })
 export class AppComponent {
     title = 'MODAStore';
