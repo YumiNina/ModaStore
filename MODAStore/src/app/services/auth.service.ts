@@ -1,10 +1,8 @@
-import { DataApiMODASTOREService } from './data-api-modastore.service';
-import { Injectable, Type } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {map } from 'rxjs/operators';
-import { isNullOrUndefined } from 'util';
-import { Registro3Component } from './../component/comprador/registro3/registro3.component';
+import { Login3 } from './../component/comprador/login3/login3.component';
 
 @Injectable({
   providedIn: 'root'
@@ -19,20 +17,25 @@ constructor(private http: HttpClient) { }
 }
 getAllComprador(){
 const url_api ="http://localhost:4200/api/modastore";
-return this.http.post(url_api, { 
-  nombre: nombre,
-  apellido: apellido,
-  ci: ci,
+return this.http
+.post(url_api, { 
+  nombre:nombre,
+  apellido:apellido,
+  ci:ci,
   contraseña:contraseña,
-  email: email,
-  celular: celular,
-  ciudad: ciudad,
-  direccion: direccion 
+  email:email,
+  celular:celular,
+  ciudad:ciudad,
+  direccion:direccion 
  },
 {Headers: this.headers  }
 )
 .pipe(map(data => data));
-
+}
+Login3(ci:number, contraseña:string): Observable<any>{
+  const url_api = http://localhost:3000/api/users/login;
+  return this.http.post(url_api,)
+}
 
 setToken(){}
 
@@ -42,6 +45,30 @@ return "Token";
  }
 }
 function getAllComprador() {
+  throw new Error('Function not implemented.');
+}
+
+function Login3(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function ci(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function contraseña(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function url_api(url_api: any) {
+  throw new Error('Function not implemented.');
+}
+
+function setToken() {
+  throw new Error('Function not implemented.');
+}
+
+function getToken() {
   throw new Error('Function not implemented.');
 }
 
