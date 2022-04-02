@@ -11,5 +11,5 @@ import { RouterModule, Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
     title = 'MODAStore';
-    imgLogo = '/MODAStore/src/app/assets/logo-empresa.png';
+
 }
