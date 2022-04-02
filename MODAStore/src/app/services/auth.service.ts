@@ -15,14 +15,31 @@ constructor(private http: HttpClient) { }
 "Content-Type" : " application/json"
   });
 
-  Registro3(nombre: string, apellido:string, ci:number, contraseña:string, email: string, celular:number, ciudad:string, direccion:string)
+  registro3(nombre: string, apellido:string, ci:number, contraseña:string, email: string, celular:number, ciudad:string, direccion:string)
 }
 getAllComprador(){
 const url_api ="http://localhost:4200/api/modastore";
-return this.http.get(url_api);
+return this.http.post(url_api, { 
+  nombre: nombre,
+  apellido: apellido,
+  ci: ci,
+  contraseña:contraseña,
+  email: email,
+  celular: celular,
+  ciudad: ciudad,
+  direccion: direccion 
+ },
+{Headers: this.headers  }
+)
+.pipe(map(data => data));
+
+
+setToken(){}
+
+ getToken(){
+return "Token"; 
 
  }
-
 }
 function getAllComprador() {
   throw new Error('Function not implemented.');
