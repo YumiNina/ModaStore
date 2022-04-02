@@ -1,4 +1,3 @@
-import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from "./app.component";
 
@@ -6,8 +5,8 @@ describe('AppComponent', () => {
   beforeEach(async () => {
      TestBed.configureTestingModule({
        imports:[
-     //   RouterTestingModule
-       ] ,
+     //   RouterTestingModule 
+       ] ,   
          declarations: [
         AppComponent
       ],
