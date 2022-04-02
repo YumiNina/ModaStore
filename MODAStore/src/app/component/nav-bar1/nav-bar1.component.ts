@@ -2,6 +2,7 @@ import { DataApiMODASTOREService } from '../../services/data-api-modastore.servi
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-nav-bar1',
   templateUrl: './nav-bar1.component.html',
   styleUrls: ['./nav-bar1.component.css']
