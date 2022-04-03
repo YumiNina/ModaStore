@@ -34,13 +34,22 @@ return this.http
 }
 Login3(ci:number, contraseña:string): Observable<any>{
   const url_api = http://localhost:3000/api/users/login;
-  return this.http.post(url_api,)
+  return this.http.post(url_api,{ci, contraseña},
+    {Headers: this.headers}
+    ).pipe(map(data => data ));
 }
 
-setToken(){}
+setUser(user){
+  let user_string = JSON.stringify(user);
+  localStorage.setItem("currentUser", user_string);
+}
+
+setToken(token){
+localStorage.setItem("accessToken", token);
+}
 
  getToken(){
-return "Token"; 
+return localStorage.getItem("accessToken"); 
 
  }
 }
