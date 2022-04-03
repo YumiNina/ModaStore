@@ -16,7 +16,7 @@ constructor(private http: HttpClient) { }
 
   registro3(nombre: string, apellido:string, ci:number, contraseña:string, email: string, celular:number, ciudad:string, direccion:string)
 }
-getAllComprador(){
+getAllComprador() {
 const url_api ="http://localhost:4200/api/modastore";
 return this.http
 .post(url_api, { 
@@ -65,6 +65,9 @@ return user;
 logoutUser(){
   let accessToken = localStorage.getItem('accessToken')
   const url_api = 'http:localhost:3000/api/Users/logout?access_token=${access_token}';
+  localStorage.removeItem('accessToken')
+  localStorage.removeItem('currentUser')
+  return this.http.post(url_api, {Headers: this.headers});
 }
 
 function getAllComprador() {
