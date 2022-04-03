@@ -2,17 +2,27 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {map } from 'rxjs/operators';
+
+
+
+
+
+//parte comentada
 //import { Login3 } from './../component/comprador/login3/login3.component';
-import { isNullOrUndefined } from 'util';
+
+
+
+
+
 
 /*
 import { UserInterface } from '../models/logincomprador-interface';
 import { UserInterface } from '../models/user-interface';
 */
-
-
 @Injectable({
+
   providedIn: 'root'
+
 })
 
 export class AuthService {
@@ -21,12 +31,25 @@ constructor(private http: HttpClient) { }
 "Content-Type" : " application/json"
   });
 
+
+
+
+  //parte comentada
   //Registro3(id: String, nombre: string, apellido:string, ci:number, contrasena:string, email: string, celular:number, ciudad:string, direccion:string)
 }
+/*
+
+
+
+
+
+//parte comentada
+
 getAllComprador() {
-const url_api ="http://localhost:4200/api/modastore";
-return this.http
-.post<UserInterface>(url_api, {
+
+
+  const url_api ="http://localhost:4200/api/modastore";
+  return this.http.post<UserInterface>(url_api, {
   nombre:nombre,
   apellido:apellido,
   ci:ci,
@@ -36,10 +59,23 @@ return this.http
   ciudad:ciudad,
   direccion:direccion
  },
-{Headers: this.headers  }
+{Headers: this.headers}
 )
 .pipe(map(data => data));
+
 }
+
+*/
+
+
+
+
+
+
+
+//parte comentada
+
+/*
 Login3(ci:number, contraseña:string): Observable<any>{
   const url_api = http://localhost:3000/api/users/login;
   return this.http.post<UserInterface>(url_api,{ci, contraseña},
@@ -80,6 +116,16 @@ logoutUser(){
   localStorage.removeItem('currentUser')
   return this.http.post(url_api, {Headers: this.headers});
 }
+*/
+
+
+
+
+
+
+
+
+
 
 function getAllComprador() {
   throw new Error('Function not implemented.');
