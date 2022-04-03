@@ -4,6 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {map } from 'rxjs/operators';
 //import { Login3 } from './../component/comprador/login3/login3.component';
 import { isNullOrUndefined } from 'util';
+import { UserInterface } from '../models/user-interface';
+import { UserInterface } from './../models/user-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +21,7 @@ constructor(private http: HttpClient) { }
 getAllComprador() {
 const url_api ="http://localhost:4200/api/modastore";
 return this.http
-.post(url_api, { 
+.post<UserInterface>(url_api, { 
   nombre:nombre,
   apellido:apellido,
   ci:ci,
@@ -35,13 +37,13 @@ return this.http
 }
 /*Login3(ci:number, contraseña:string): Observable<any>{
   const url_api = http://localhost:3000/api/users/login;
-  return this.http.post(url_api,{ci, contraseña},
+  return this.http.post<UserInterface>(url_api,{ci, contraseña},
     {Headers: this.headers}
     ).pipe(map(data => data ));
 }
 */
-setUser(user){
-  let user_string = JSON.stringify(user);
+setUser(user: UserInterface): void{
+  let user_String = JSON.stringify(user);
   localStorage.setItem("currentUser", user_string);
 }
 
@@ -53,7 +55,7 @@ getToken(){
 return localStorage.getItem("accessToken"); 
 
  }
-getCurrentUser(){
+getCurrentUser():UserInterface{
 let user_string = localStorage.getItem("currentUser");
 if(isNullOrUndefined(user_string)){
 let user = JSON.parse(user_string);
