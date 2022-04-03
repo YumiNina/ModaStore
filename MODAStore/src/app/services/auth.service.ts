@@ -14,7 +14,7 @@ constructor(private http: HttpClient) { }
 "Content-Type" : " application/json"
   });
 
-  registro3(nombre: string, apellido:string, ci:number, contraseña:string, email: string, celular:number, ciudad:string, direccion:string)
+  Registro3(nombre: string, apellido:string, ci:number, contraseña:string, email: string, celular:number, ciudad:string, direccion:string)
 }
 getAllComprador() {
 const url_api ="http://localhost:4200/api/modastore";
