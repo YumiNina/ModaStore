@@ -7,7 +7,7 @@
 
 *- Gael Aracely Condori Tipola*
 
-*- Eliana Vargas Rojas*
+*- Eliana Vargas Rojas 03'*
 
 *- Jose Pozo Silva*
 
