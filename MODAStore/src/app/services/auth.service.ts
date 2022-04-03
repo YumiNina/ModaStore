@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {map } from 'rxjs/operators';
 import { Login3 } from './../component/comprador/login3/login3.component';
+import { isNullOrUndefined } from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -52,7 +53,20 @@ localStorage.setItem("accessToken", token);
 return localStorage.getItem("accessToken"); 
 
  }
+getCurrentUser(){
+let user_string = localStorage.getItem("currentUser");
+if(isNullOrUndefined(user_string)){
+let user = JSON.parse(user_string);
+return user;
+} else{
+  return null
 }
+}
+logoutUser(){
+  let accessToken = localStorage.getItem('accessToken')
+  const url_api = 'http:localhost:3000/api/Users/logout?access_token=${access_token}';
+}
+
 function getAllComprador() {
   throw new Error('Function not implemented.');
 }
