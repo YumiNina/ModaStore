@@ -58,7 +58,7 @@ export class AuthService {
   getToken() {
     return localStorage.getItem("accessToken");
   }
-
+/*
   getCurrentComprador():UserInterface {
     let comprador_string = localStorage.getItem("currentUser");
     if (!isNullOrUndefined(comprador_string)) {
@@ -66,13 +66,13 @@ export class AuthService {
       return comprador;
     }
     else {
-  
-    
+
+
           return null;
 
         }
 
-  }
+  }*/
 
   logoutComprador(): Observable<UserInterface> {
     let accessToken = localStorage.getItem("accessToken");
