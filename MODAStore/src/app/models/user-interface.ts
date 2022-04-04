@@ -1,5 +1,5 @@
 export interface UserInterface {
-    id ?: string;
+    id ?: String;
     nombre?:String;
     apellido?:string;
     ci?:number;
@@ -10,6 +10,3 @@ export interface UserInterface {
     direccion?:string;
 }
 
-export class Login3{
-
-}

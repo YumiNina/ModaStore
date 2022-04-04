@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/observable';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, JsonpClientBackend } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { UserInterface } from '../models/user-interface';
 import { isNullOrUndefined } from 'util';
+import { isNull, nullSafeIsEquivalent, NULL_EXPR, TYPED_NULL_EXPR } from '@angular/compiler/src/output/output_ast';
+import { UserInterface } from '../models/user-interface';
 
 @Injectable({
 
@@ -17,7 +18,7 @@ export class AuthService {
     "Content-Type": " application/json"
   });
 
-  compradorregistro3(nombre: string, apellido: string, ci: number, contraseña: string, email: string, celular: number, ciudad: string, direccion: string){
+  compradorregistro3(nombre: string, apellido: string, ci: number, contraseña: string, email: string, celular: number, ciudad: string, direccion: string) {
     const url_api = "http://localhost:3000/api/registro3";
     return this.http
       .post<UserInterface>(
@@ -26,11 +27,11 @@ export class AuthService {
           nombre: nombre,
           apellido: apellido,
           ci: ci,
-          contraseña:contraseña,
-          email:email,
-          celular:celular,
-          ciudad:ciudad,
-          direccion:direccion
+          contraseña: contraseña,
+          email: email,
+          celular: celular,
+          ciudad: ciudad,
+          direccion: direccion
         },
         { headers: this.headers }
       )
@@ -46,31 +47,32 @@ export class AuthService {
       )
       .pipe(map(data => data));
   }
-  setUser(comprador: UserInterface): void {
+  setcomprador(comprador: UserInterface): void {
     let comprador_string = JSON.stringify(comprador);
     localStorage.setItem("currentUser", comprador_string);
   }
-  setToken(token): void {
-    localStorage.setItem("accessToken", token);
-  }
+//  setToken(token): void {
+  //  localStorage.setItem("accessToken", token);
+//  }
 
   getToken() {
     return localStorage.getItem("accessToken");
   }
 
-  getCurrentComprador(): UserInterface {
+  getCurrentComprador():UserInterface {
     let comprador_string = localStorage.getItem("currentUser");
     if (!isNullOrUndefined(comprador_string)) {
       let comprador: UserInterface = JSON.parse(comprador_string);
       return comprador;
-    } 
+    }
     else {
-      return Null;
+  
+return null;
     }
 
   }
 
-  logoutComprador() {
+  logoutComprador(): Observable<UserInterface> {
     let accessToken = localStorage.getItem("accessToken");
     const url_api = `http://localhost:3000/api/comprador/logout?access_token=${accessToken}`;
     localStorage.removeItem("accessToken");
