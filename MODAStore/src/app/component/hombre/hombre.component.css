@@ -14,46 +14,36 @@ html {
 }
 
 
-/* ********************************************************** */
+/* **********************************************************  CARRUCEL*/
+body { margin: 0; }
+div#slider { overflow: hidden; } /* las imágenes no van a salir del márgen de la pantalla*/
+div#slider figure img { width: 20%; float: left; }
 
-.slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
 }
 
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
 
-	animation: cambio 20s infinite alternate linear;
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
 
-.slider li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider img {
-	width: 100%;
-}
-
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
-/* ********************************************************** */
+/* **********************************************************  MENU LATERAL */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 	*{
@@ -85,7 +75,7 @@ html {
 		line-height:100px;
 	}
 	.container .btn-menu label{ /* MI CIUDAD*/
-		color: rgb(0, 0, 0);
+		color: rgb(5, 0, 0);
 		font-size: 25px;
 		cursor: pointer;
 	}
@@ -140,4 +130,3 @@ html {
 	}
 
 	/*Fin de Menù lateral*/
-
