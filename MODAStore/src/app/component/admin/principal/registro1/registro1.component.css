@@ -1,1 +1,39 @@
-.form-regstro-administrador {}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/***************************************************/
+
+.forms-registro {
+    padding-top: 10%;
+    position: relative;
+}
+
+.bar-Reg-Admin-prin {
+    padding: 0;
+    margin: 0;
+    background-color: navy;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.bar-Reg-Admin-prin .tittle {
+    color: blanchedalmond;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}

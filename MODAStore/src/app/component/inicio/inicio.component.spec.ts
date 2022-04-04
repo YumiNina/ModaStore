@@ -2,7 +2,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InicioComponent } from './inicio.component';
-import { NavBar1Component} from '../nav-bar1/nav-bar1.component'
+import { NavBar1Component} from '../nav-bar1/nav-bar1.component';
+import { FooterComponent} from '../footer/footer.component';
 
 describe('InicioComponent', () => {
   let component: InicioComponent;

@@ -1,10 +1,12 @@
+
 /* Imports por defecto de angular*/
 import { NgModule} from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from "./app.component";
+//import { AppComponent } from "./app.component";
+
 
 /* imports de formularios de angular*/
 import { FormsModule } from '@angular/forms';
@@ -37,12 +39,50 @@ import { Login3Component } from './component/comprador/login3/login3.component';
 import { Registro3Component } from './component/comprador/registro3/registro3.component';
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
+import { InicioComponent } from './component/inicio/inicio.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
+import { RouterModule, Routes } from '@angular/router';
+
+
+
+// Esto es un Array de objetos
+const appRoutes:Routes=[
+  //Aca se deben defirnir y crear un objeto por cada ruta
+  { path: 'Inicio', component: InicioComponent},
+  { path: "./component/FooterComponent",component: FooterComponent},
+  { path: "./component/nav-NavBar1Component", component: NavBar1Component },
+  { path: "administrador", component: AdminComponent },
+  { path: "admin/principal", component: PrincipalComponent },
+  { path: "admin/principal/login1", component: Login1Component },
+  { path: "admin/principal/registro1", component: Registro1Component },
+  { path: "admin/secundario", component: SecundarioComponent },
+  { path: "admin/secundario/login2", component: Login2Component },
+  { path: "admin/secundario/registro2", component: Registro2Component },
+  { path: "comprador", component: CompradorComponent },
+  { path: "comprador/login3", component: Login3Component },
+  { path: "comprador/registro3", component: Registro3Component },
+  { path: "hombre", component: HombreComponent },
+  { path: "hombre/ninho", component: NinhoComponent },
+  { path: "mujer/ninha", component: MujerComponent },
+  { path: "mujer/ninha", component: NinhaComponent },
+  { path: "novedades", component: NovedadesComponent },
+  { path: "ofertas", component: OfertasComponent },
+  { path: "outlet", component: OutletComponent },
+  { path: "**", component: Page404Component },
+  { path: "unisex", component: UnisexComponent },
+  { path: "vendedor", component: VendedorComponent },
+  { path: "vendedor/login4", component: Login4Component },
+  { path: "vendedor/registro4", component: Registro4Component },
+
+];
 
 @NgModule({
    declarations: [
+
+    InicioComponent,
     NavBar1Component,
     NovedadesComponent,
     MujerComponent,
@@ -65,7 +105,9 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
     SecundarioComponent,
     VendedorComponent,
     CompradorComponent,
-    Page404Component
+    Page404Component,
+    FooterComponent,
+
   ],
   imports: [
 
@@ -74,14 +116,19 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
     HttpClientModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule.forRoot(appRoutes),
     FormsModule],
 
 
   providers: [DataApiMODASTOREService],
-  bootstrap: [AppComponent]
+  bootstrap: [InicioComponent]// En esta linea se esta modificando el acceso a la ruta, es decir, a la pagina de incio
 })
 export class AppModule {
 
 
+}
+
+function routes(routes: any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
+  throw new Error('Function not implemented.');
 }
 

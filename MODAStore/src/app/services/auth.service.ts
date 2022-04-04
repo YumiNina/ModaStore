@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+<<<<<<< HEAD
 import { map } from 'rxjs/operators';
 //import { Login3 } from './../component/comprador/login3/login3.component';
 //import { isNullOrUndefined } from 'util';
 import { UserInterface } from '../models/user-interface';
+=======
+import {map } from 'rxjs/operators';
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 
 
 
@@ -34,8 +38,17 @@ export class AuthService {
   headers: HttpHeaders = new HttpHeaders({
     "Content-Type": " application/json"
   });
+<<<<<<< HEAD
 /*
   Registro3(nombre: string, apellido: string, ci: number, contraseña: string, email: string, celular: number, ciudad: string, direccion: string)
+=======
+
+
+
+
+  //parte comentada
+  //Registro3(id: String, nombre: string, apellido:string, ci:number, contrasena:string, email: string, celular:number, ciudad:string, direccion:string)
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 }
 /*
 
@@ -46,6 +59,7 @@ export class AuthService {
 //parte comentada
 
 getAllComprador() {
+<<<<<<< HEAD
   const url_api = "http://localhost:4200/api/modastore";
   return this.http
     .post<UserInterface>(url_api, {
@@ -61,6 +75,25 @@ getAllComprador() {
       { Headers: this.headers }
     )
     .pipe(map(data => data));
+=======
+
+
+  const url_api ="http://localhost:4200/api/modastore";
+  return this.http.post<UserInterface>(url_api, {
+  nombre:nombre,
+  apellido:apellido,
+  ci:ci,
+  contraseña:contraseña,
+  email:email,
+  celular:celular,
+  ciudad:ciudad,
+  direccion:direccion
+ },
+{Headers: this.headers}
+)
+.pipe(map(data => data));
+
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 }
 
 */
@@ -74,11 +107,18 @@ Login3(ci:number, contraseña:string): Observable<any>{
     ).pipe(map(data => data ));
 }
 
+<<<<<<< HEAD
 */
 /*
 setUser(user: UserInterface): void {
   let user_String = JSON.stringify(user);
   localStorage.setItem("currentUser", user_string);
+=======
+
+setUser(user UserInterface): void{
+  let_user_String = JSON.stringify(user),
+  localStorage.SetItem("currentUser", user_string)
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 }
 
 setToken(token){
@@ -86,8 +126,22 @@ setToken(token){
 }
 
 getToken(){
+<<<<<<< HEAD
   return localStorage.getItem("accessToken");
 
+=======
+return localStorage.getItem("accessToken");
+
+ }
+
+getCurrentUser(): UserInterface{
+let user_string = localStorage.getItem("currentUser");
+if(isNullOrUndefined(user_string)){
+let user = JSON.parse(user_string);
+return user;
+} else{
+  return null
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 }
 getCurrentUser(): UserInterface {
   let user_string = localStorage.getItem("currentUser");
@@ -103,7 +157,69 @@ logoutUser(){
   const url_api = 'http:localhost:3000/api/Users/logout?access_token=${access_token}';
   localStorage.removeItem('accessToken')
   localStorage.removeItem('currentUser')
+<<<<<<< HEAD
   return this.http.post<UserInterface>(url_api, { Headers: this.headers });
+=======
+  return this.http.post(url_api, {Headers: this.headers});
+}
+*/
+
+
+
+
+
+
+
+
+
+
+function getAllComprador() {
+  throw new Error('Function not implemented.');
+}
+
+function Login3(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function ci(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function contraseña(ci: any, number: any, contraseña: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function url_api(url_api: any) {
+  throw new Error('Function not implemented.');
+}
+
+function setToken() {
+  throw new Error('Function not implemented.');
+}
+
+function getToken() {
+  throw new Error('Function not implemented.');
+}
+
+function setUser(user: any) {
+  throw new Error('Function not implemented.');
+}
+
+function user(user: any) {
+  throw new Error('Function not implemented.');
+}
+
+function token(token: any) {
+  throw new Error('Function not implemented.');
+}
+
+function getCurrentUser() {
+  throw new Error('Function not implemented.');
+}
+
+function logoutUser() {
+  throw new Error('Function not implemented.');
+>>>>>>> f594d68be658cfab37e24a3c3ff4fcd933a28070
 }
 
 function user_string(arg0: string, user_string: any) {
