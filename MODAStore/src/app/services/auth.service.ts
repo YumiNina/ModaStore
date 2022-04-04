@@ -43,8 +43,19 @@ export class AuthService {
         { headers: this.headers }
       )
       .pipe(map(data => data));
-
   }
+  compradorlogin3(ci: number, contraseña: string): Observable<any> {
+    const url_api = "http://localhost:3000/api/Users/login?include=user";
+    return this.http
+      .post<UserInterface>(
+        url_api,
+        { ci, contraseña },
+        { headers: this.headers }
+      )
+      .pipe(map(data => data));
+  }
+
+
 }
 
 
@@ -117,4 +128,4 @@ logoutUser(){
 
 function user_string(arg0: string, user_string: any) {
   throw new Error('Function not implemented.');
-}*/}
+}*/
