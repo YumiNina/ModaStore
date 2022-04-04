@@ -10,8 +10,8 @@ import { RouterModule, Router, NavigationEnd } from '@angular/router';
       //templateUrl: './component/inicio/inicio.component.html',
      // styleUrls: ['./component/inicio/inicio.component.css']
 
-     templateUrl: './component/hombre/hombre.component.html',
-      styleUrls: ['./component/hombre/hombre.component.css']
+     templateUrl: './component/admin/principal/registro1/registro1.component.html',
+     styleUrls: ['./component/admin/principal/registro1/registro1.component.css']
 
 })
 export class AppComponent {

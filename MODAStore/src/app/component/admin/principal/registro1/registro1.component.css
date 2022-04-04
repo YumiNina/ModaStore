@@ -1,1 +1,22 @@
-.form-regstro-administrador {}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/***************************************************/
+
+.forms-registro {
+    padding-top: 10%;
+    position: relative;
+}
