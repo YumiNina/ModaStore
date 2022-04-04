@@ -44,7 +44,7 @@ const routes: Routes = [
   { path: "Comprador/Registro", component: Registro3Component },
   { path: "Hombre", component: HombreComponent },
   { path: "Hombre/Ninho", component: NinhoComponent },
-  { path: "Mujer/Ninha", component: MujerComponent },
+  { path: "Mujer", component: MujerComponent },
   { path: "Mujer/Ninha", component: NinhaComponent },
   { path: "Novedades", component: NovedadesComponent },
   { path: "Ofertas", component: OfertasComponent },
