@@ -15,6 +15,8 @@ html {
 
 
 /* **********************************************************  CARRUCEL*/
+
+
 body { margin: 0; }
 div#slider { overflow: hidden; } /* las imágenes no van a salir del márgen de la pantalla*/
 div#slider figure img { width: 20%; float: left; }
@@ -44,6 +46,7 @@ div#slider figure {
 }
 
 /* **********************************************************  MENU LATERAL */
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 	*{
@@ -128,5 +131,4 @@ div#slider figure {
 		border-left: 5px solid transparent;
 		transition: all 400ms ease;
 	}
-
-	/*Fin de Menù lateral*/
+ 	/*Fin de Menù lateral*/
