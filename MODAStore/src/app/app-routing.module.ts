@@ -23,10 +23,13 @@ import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
+import { InicioComponent } from './component/inicio/inicio.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 const routes: Routes = [
 
-  { path: " ", component: NavBar1Component },
+  { path: "./component/nav-NavBar1Component", component: NavBar1Component },
+  { path: "./component/FooterComponent",component: FooterComponent},
   { path: "administrador", component: AdminComponent },
   { path: "admin/principal", component: PrincipalComponent },
   { path: "admin/principal/login1", component: Login1Component },
@@ -49,11 +52,13 @@ const routes: Routes = [
   { path: "vendedor", component: VendedorComponent },
   { path: "vendedor/login4", component: Login4Component },
   { path: "vendedor/registro4", component: Registro4Component },
-
+  { path: 'inicio', component: InicioComponent}
 
 
 
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
