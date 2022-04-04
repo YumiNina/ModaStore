@@ -37,7 +37,7 @@ export class AuthService {
       .pipe(map(data => data));
   }
   compradorlogin3(ci: number, contraseña: string): Observable<any> {
-    const url_api = "http://localhost:3000/api/Users/login?include=user";
+    const url_api = "http://localhost:3000/api/comprador/login3?include=user";
     return this.http
       .post<UserInterface>(
         url_api,
@@ -63,46 +63,21 @@ export class AuthService {
     if (!isNullOrUndefined(comprador_string)) {
       let comprador: UserInterface = JSON.parse(comprador_string);
       return comprador;
-    } else {
-    //  return null;
-
+    } 
+    else {
+      return Null;
     }
+
   }
 
   logoutComprador() {
     let accessToken = localStorage.getItem("accessToken");
-    const url_api = `http://localhost:3000/api/Users/logout?access_token=${accessToken}`;
+    const url_api = `http://localhost:3000/api/comprador/logout?access_token=${accessToken}`;
     localStorage.removeItem("accessToken");
     localStorage.removeItem("currentUser");
     return this.http.post<UserInterface>(url_api, { headers: this.headers });
   }
 }
 
-
-
-/*
-
-//parte comentada
-
-getAllComprador() {
-  const url_api = "http://localhost:4200/api/modastore";
-  return this.http
-    .post<UserInterface>(url_api, {
-      nombre: nombre,
-      apellido: apellido,
-      ci: ci,
-      contraseña: contraseña,
-      email: email,
-      celular: celular,
-      ciudad: ciudad,
-      direccion: direccion
-    },
-      { Headers: this.headers }
-    )
-    .pipe(map(data => data));
-}
-
-*/
-//parte comentada
 
 
