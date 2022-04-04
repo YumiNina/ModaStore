@@ -6,6 +6,7 @@ import { NavBar1Component} from '../nav-bar1/nav-bar1.component'
 
 describe('InicioComponent', () => {
   let component: InicioComponent;
+
   let fixture: ComponentFixture<InicioComponent>;
 
   beforeEach(async () => {

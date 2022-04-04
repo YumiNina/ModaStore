@@ -11,7 +11,7 @@ import { RouterModule, Router, NavigationEnd } from '@angular/router';
      // styleUrls: ['./component/inicio/inicio.component.css']
 
      templateUrl: './component/hombre/hombre.component.html',
-     styleUrls: ['./component/hombre/hombre.component.css']
+      styleUrls: ['./component/hombre/hombre.component.css']
 
 })
 export class AppComponent {
