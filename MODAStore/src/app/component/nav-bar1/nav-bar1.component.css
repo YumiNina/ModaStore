@@ -14,8 +14,6 @@ html {
 }
 
 
-
-
 /* ********************************************************** */
 
 .Menu-Bar {
@@ -48,7 +46,7 @@ html {
     display: inline-block;
 }
 
-.Menu-Bar .iniciar-sesion {
+.Menu-Bar .Item {
     margin-top: 30px;
     margin-right: 20px;
     background-color: transparent;
@@ -60,6 +58,8 @@ html {
     list-style: none;
 }
 
+
+/*
 .Menu-Bar .Registrarse {
     margin-top: 30px;
     background-color: transparent;
@@ -71,14 +71,18 @@ html {
     list-style: none;
     overflow: hidden;
 }
+*/
 
+
+/*
 .Registrarse a {
     text-decoration: none;
     background-color: transparent;
     color: white;
 }
+*/
 
-.iniciar-sesion a {
+.Item a {
     text-decoration: none;
     background-color: transparent;
     color: white;

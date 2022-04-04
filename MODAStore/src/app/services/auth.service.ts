@@ -3,7 +3,8 @@ import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { UserInterface } from '../models/user-interface';
-import { isNullOrUndefined } from 'util';
+//import { isNullOrUndefined } from 'util';
+
 
 @Injectable({
 
@@ -50,25 +51,25 @@ export class AuthService {
     let comprador_string = JSON.stringify(comprador);
     localStorage.setItem("currentUser", comprador_string);
   }
-  setToken(token): void {
+  setToken(token: string): void {
     localStorage.setItem("accessToken", token);
   }
 
   getToken() {
     return localStorage.getItem("accessToken");
   }
-
+/*
   getCurrentComprador(): UserInterface {
     let comprador_string = localStorage.getItem("currentUser");
     if (!isNullOrUndefined(comprador_string)) {
       let comprador: UserInterface = JSON.parse(comprador_string);
       return comprador;
-    } 
+    }
     else {
       return Null;
     }
 
-  }
+  }*/
 
   logoutComprador() {
     let accessToken = localStorage.getItem("accessToken");
