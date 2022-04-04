@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import{HttpClient, HttpHeaders} from '@angular/common/http'
-//import { Observable } from 'rxjs/internal/Observable';
+import { Observable } from 'rxjs/internal/Observable';
 //import {loginInterface} from "../models/logincomprador-interface";
 import { AuthService } from './auth.service';
 
@@ -22,6 +22,10 @@ El método DELETE borra un recurso en específico.
 
 
 export class DataApiMODASTOREService {
+
+  //nombre: Observable<any>;
+  //nombres: Observable<any>;  
+
 
   constructor(private http:HttpClient, private AuthService:AuthService) { }
 
