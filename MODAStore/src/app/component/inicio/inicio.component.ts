@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavBar1Component } from '../nav-bar1/nav-bar1.component';
 import {FooterComponent} from '../footer/footer.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -11,4 +12,6 @@ import {FooterComponent} from '../footer/footer.component';
 
 export class InicioComponent {
   title = 'MODAStore';
+
+
 }

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
@@ -25,34 +26,35 @@ import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { IdentificateComponent } from './component/identificate/identificate.component';
 
 const routes: Routes = [
-
-  { path: "./component/nav-NavBar1Component", component: NavBar1Component },
-  { path: "./component/FooterComponent",component: FooterComponent},
-  { path: "administrador", component: AdminComponent },
-  { path: "admin/principal", component: PrincipalComponent },
-  { path: "admin/principal/login1", component: Login1Component },
-  { path: "admin/principal/registro1", component: Registro1Component },
-  { path: "admin/secundario", component: SecundarioComponent },
-  { path: "admin/secundario/login2", component: Login2Component },
-  { path: "admin/secundario/registro2", component: Registro2Component },
-  { path: "comprador", component: CompradorComponent },
-  { path: "comprador/login3", component: Login3Component },
-  { path: "comprador/registro3", component: Registro3Component },
-  { path: "hombre", component: HombreComponent },
-  { path: "hombre/ninho", component: NinhoComponent },
-  { path: "mujer/ninha", component: MujerComponent },
-  { path: "mujer/ninha", component: NinhaComponent },
-  { path: "novedades", component: NovedadesComponent },
-  { path: "ofertas", component: OfertasComponent },
-  { path: "outlet", component: OutletComponent },
+  { path: "Identificate", component: IdentificateComponent},
+  { path: "NavBar", component: NavBar1Component },
+  { path: "Footer",component: FooterComponent},
+  { path: "Administrador", component: AdminComponent },
+  { path: "Admin/Principal", component: PrincipalComponent },
+  { path: "Admin/Principal/Login", component: Login1Component },
+  { path: "Admin/Principal/Registro", component: Registro1Component },
+  { path: "Admin/Secundario", component: SecundarioComponent },
+  { path: "Admin/Secundario/Login", component: Login2Component },
+  { path: "Admin/Secundario/Registro", component: Registro2Component },
+  { path: "Comprador", component: CompradorComponent },
+  { path: "Comprador/Login", component: Login3Component },
+  { path: "Comprador/Registro", component: Registro3Component },
+  { path: "Hombre", component: HombreComponent },
+  { path: "Hombre/Ninho", component: NinhoComponent },
+  { path: "Mujer", component: MujerComponent },
+  { path: "Mujer/Ninha", component: NinhaComponent },
+  { path: "Novedades", component: NovedadesComponent },
+  { path: "Ofertas", component: OfertasComponent },
+  { path: "Outlet", component: OutletComponent },
   { path: "**", component: Page404Component },
-  { path: "unisex", component: UnisexComponent },
-  { path: "vendedor", component: VendedorComponent },
-  { path: "vendedor/login4", component: Login4Component },
-  { path: "vendedor/registro4", component: Registro4Component },
-  { path: 'inicio', component: InicioComponent}
+  { path: "Unisex", component: UnisexComponent },
+  { path: "Vendedor", component: VendedorComponent },
+  { path: "Vendedor/Login", component: Login4Component },
+  { path: "Vendedor/Registro", component: Registro4Component },
+  { path: '', component: InicioComponent}
 
 
 
@@ -67,3 +69,4 @@ const routes: Routes = [
 
 })
 export class AppRoutingModule { }
+
