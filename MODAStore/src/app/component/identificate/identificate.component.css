@@ -13,16 +13,66 @@ html {
     font-size: 62.5%;
 }
 
-.Opciones-Identificate .Cliente {
-    background-color: darkcyan;
-    margin: 5%;
+.Opciones-Identificate {
+    background-color: darkslategray;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*  ##################################################*/
+
+.Cliente-Login {
+    padding-top: 25px;
+}
+
+.Cliente-Login .Iniciar-Sesion {
     width: 40%;
+    background-color: #ffffff;
+    margin-left: 10%;
+    filter: brightness(100%);
 }
 
-.Registrarse .Tittle-Registro-Cliente {
+.Iniciar-Sesion .Tittle-Iniciar-Sesion-Cliente {}
+
+.Tittle-Iniciar-Sesion-Cliente {
+    padding-top: 50px;
+    color: #00446A;
     text-align: center;
 }
 
-.Tittle-Registro-Cliente {
+.img-LogIn-Client {
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    filter: brightness(100%);
+}
+
+
+/*##########################################*/
+
+.Cliente-SignUp {
+    padding-top: 25px;
+}
+
+.Cliente-SignUp .SignUp {
+    width: 40%;
+    background-color: #ffffff;
+    margin-left: 10%;
+    filter: brightness(100%);
+}
+
+.SignUp .Tittle-SignUp-Cliente {}
+
+.Tittle-SignUp-Cliente {
+    padding-top: 50px;
+    padding-top: 50px;
     text-align: center;
+}
+
+.img-SignUp-Client {
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    filter: brightness(100%);
 }
