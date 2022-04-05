@@ -81,6 +81,14 @@ export class AuthService {
     localStorage.removeItem("currentUser");
     return this.http.post<UserInterface>(url_api, { headers: this.headers });
   }
+
+  /*getPersona(){
+    return this.http.get<Persona[]> (this.Url);
+
+  }
+
+  CreatePersona(persona:Persona){
+    return this.http.post<Persona>(this.Url,persona)}*/
 }
 
 
