@@ -54,7 +54,7 @@ const routes: Routes = [
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: '', component: InicioComponent}
+  { path: "Iniciar", component: InicioComponent}
 
 
 

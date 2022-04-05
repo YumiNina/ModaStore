@@ -48,6 +48,8 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
 //import { RegistrateComponent } from './Identificate/registrate/registrate.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
 import { firstValueFrom } from 'rxjs';
+import { AccesoriosComponent } from './component/accesorios/accesorios.component';
+import { BuildingComponent } from './component/building/building.component';
 
 
 
@@ -79,7 +81,9 @@ const appRoutes:Routes=[
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: '', component: InicioComponent}
+  { path: "Iniciar", component: InicioComponent},
+
+
 
 
 ];
@@ -112,7 +116,9 @@ const appRoutes:Routes=[
     CompradorComponent,
     Page404Component,
     FooterComponent,
-    IdentificateComponent
+    IdentificateComponent,
+    AccesoriosComponent,
+    BuildingComponent,
 
   ],
   imports: [

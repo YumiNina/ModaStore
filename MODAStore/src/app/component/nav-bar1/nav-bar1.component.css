@@ -46,17 +46,19 @@ html {
     display: inline-block;
 }
 
-.Menu-Bar .Item {
+
+/*.Menu-Bar .Item {
     margin-top: 30px;
     margin-right: 20px;
     background-color: transparent;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.0rem;
     padding: 10px;
     float: right;
     display: flex;
     list-style: none;
 }
+*/
 
 
 /*
@@ -71,6 +73,7 @@ html {
     list-style: none;
     overflow: hidden;
 }
+
 */
 
 
@@ -81,6 +84,26 @@ html {
     color: white;
 }
 */
+
+.Identificate a {
+    color: white;
+    overflow: hidden;
+    list-style: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Menu-Bar .Identificate {
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px;
+    float: right;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
 
 .Item a {
     text-decoration: none;
@@ -106,7 +129,7 @@ html {
 
 .bar li {
     float: left;
-    padding-left: 5%;
+    padding-left: 4%;
 }
 
 .bar li a {
