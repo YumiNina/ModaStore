@@ -15,7 +15,7 @@ import { NinhaComponent } from './component/mujer/ninha/ninha.component';
 import { NovedadesComponent } from './component/novedades/novedades.component';
 import { OfertasComponent } from './component/ofertas/ofertas.component';
 import { OutletComponent } from './component/outlet/outlet.component';
-import { Page404Component } from './component/page404/page404.component';
+//import { Page404Component } from './component/page404/page404.component';
 import { UnisexComponent } from './component/unisex/unisex.component';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
@@ -28,7 +28,7 @@ import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
-import { DepartamentosComponent } from './component/departamentos/departamentos.component';
+import { DeptosComponent } from './component/deptos/deptos.component';
 
 const routes: Routes = [
   { path: "Identificate", component: IdentificateComponent},
@@ -51,13 +51,14 @@ const routes: Routes = [
   { path: "Novedades", component: NovedadesComponent },
   { path: "Ofertas", component: OfertasComponent },
   { path: "Outlet", component: OutletComponent },
-  { path: "**", component: Page404Component },
+  //{ path: "**", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
   { path: "Iniciar", component: InicioComponent},
-  { path:"Departamentos", component: DepartamentosComponent},
+  { path: "Deptos", component: DeptosComponent},
+
 
 
 

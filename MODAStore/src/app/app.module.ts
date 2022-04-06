@@ -49,7 +49,8 @@ import { IdentificateComponent } from './component/identificate/identificate.com
 import { firstValueFrom } from 'rxjs';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { BuildingComponent } from './component/building/building.component';
-import { DepartamentosComponent } from './component/departamentos/departamentos.component';
+import { DeptosComponent } from './component/deptos/deptos.component';
+
 
 
 
@@ -81,10 +82,9 @@ const appRoutes:Routes=[
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: "Iniciar", component: InicioComponent},
-  {path : "Departamentos",component: DepartamentosComponent},
-
-
+  { path: "Inicio", component: InicioComponent},
+  { path: "Deptos",component: DeptosComponent},
+  {path:"Build",component: BuildingComponent},
 
 
 ];
@@ -120,7 +120,9 @@ const appRoutes:Routes=[
     IdentificateComponent,
     AccesoriosComponent,
     BuildingComponent,
-    DepartamentosComponent,
+    DeptosComponent,
+    BuildingComponent,
+    DeptosComponent
 
   ],
   imports: [
