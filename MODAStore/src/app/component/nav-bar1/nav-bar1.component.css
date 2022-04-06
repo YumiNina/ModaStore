@@ -61,8 +61,6 @@ html {
 */
 
 
-
-
 /*
 .Menu-Bar .Registrarse {
     margin-top: 30px;
@@ -87,7 +85,7 @@ html {
 }
 */
 
-.Identificate a {
+.IdentificateCliente a {
     color: white;
     overflow: hidden;
     list-style: none;
@@ -95,7 +93,27 @@ html {
     text-decoration: none;
 }
 
-.Menu-Bar .Identificate {
+.IdentificateVendedor a {
+    color: white;
+    overflow: hidden;
+    list-style: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Menu-Bar .IdentificateCliente {
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px;
+    float: right;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+
+.Menu-Bar .IdentificateVendedor {
     margin-top: 30px;
     background-color: transparent;
     color: white;
@@ -150,25 +168,30 @@ html {
 /* **********************************************************menu
  desplegable */
 
- .menuCSS3 ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
+
 .menuCSS3 a {
-  display: block;
-  padding: 2em;
-  background-color: #F9B53C;
-  text-decoration: none;
-  color: #191C26;
+    display: block;
+    padding: 2em;
+    background-color: #F9B53C;
+    text-decoration: none;
+    color: #191C26;
 }
+
 .menuCSS3 a:hover {
-  background-color: #CC673B;
+    background-color: #CC673B;
 }
+
 .menuCSS3 ul li ul {
-  display: none;
+    display: none;
 }
-.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
-  display: block;
+
+.menuCSS3 ul li a:hover+ul,
+.menuCSS3 ul li ul:hover {
+    display: block;
 }

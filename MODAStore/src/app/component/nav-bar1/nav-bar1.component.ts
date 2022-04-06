@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
-import { IdentificateComponent } from '../identificate/identificate.component';
+import { IdentificateClienteComponent } from '../identificate-cliente/identificate-cliente.component';
 @Component({
 
   selector: 'app-nav-bar1',
@@ -23,7 +23,7 @@ this.authservice.logoutComprador();
 }
 
   Identificate(){
-        this.router.navigate([IdentificateComponent])
+        this.router.navigate([IdentificateClienteComponent])
   }
 
   }

@@ -1,5 +1,5 @@
-
-
+import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
+import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
@@ -20,22 +20,17 @@ import { UnisexComponent } from './component/unisex/unisex.component';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
 import { Login3Component } from './component/comprador/login3/login3.component';
-
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { IdentificateComponent } from './component/identificate/identificate.component';
-<<<<<<< HEAD
-import { Registro3Component } from './component/comprador/registro3/Registro3.component';
-=======
 import { DeptosComponent } from './component/deptos/deptos.component';
->>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
+import { IdentificateVendedorComponent } from './component/identificate-vendedor/identificate-vendedor.component';
 
 const routes: Routes = [
-  { path: "Identificate", component: IdentificateComponent},
+
   { path: "NavBar", component: NavBar1Component },
   { path: "Footer",component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
@@ -47,7 +42,7 @@ const routes: Routes = [
   { path: "Admin/Secundario/Registro2", component: Registro2Component },
   { path: "Comprador", component: CompradorComponent },
   { path: "Comprador/Login3", component: Login3Component },
-  { path: "Comprador/Registro3", component: Registro3Component },
+ // { path: "Comprador/Registro3", component: Registro3Component },
   { path: "Hombre", component: HombreComponent },
   { path: "Hombre/Ninho", component: NinhoComponent },
   { path: "Mujer", component: MujerComponent },
@@ -58,17 +53,14 @@ const routes: Routes = [
   //{ path: "**", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
-<<<<<<< HEAD
-  { path: "Vendedor/Login4", component: Login4Component },
-  { path: "Vendedor/Registro4", component: Registro4Component },
-  { path: '', component: InicioComponent}
-=======
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
   { path: "Iniciar", component: InicioComponent},
   { path: "Deptos", component: DeptosComponent},
+  { path: "Accesorios", component: AccesoriosComponent},
+  { path: "IdentificateCliente", component: IdentificateClienteComponent},
+  { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
 
->>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
 
 
 

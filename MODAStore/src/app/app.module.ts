@@ -1,18 +1,12 @@
 /* Imports por defecto de angular*/
 import { NgModule} from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
 //import { AppComponent } from "./app.component";
-
-
 /* imports de formularios de angular*/
 import { FormsModule } from '@angular/forms';
 /* Import Router */
 import { RouterModule, Routes } from '@angular/router';
-
-
 /*Imports propios del proyecto */
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { NovedadesComponent } from './component/novedades/novedades.component';
@@ -39,29 +33,24 @@ import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
-
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
-
 //import { RegistrateComponent } from './Identificate/registrate/registrate.component';
-import { IdentificateComponent } from './component/identificate/identificate.component';
-<<<<<<< HEAD
-import { Registro3Component } from './component/comprador/registro3/Registro3.component';
-//import { firstValueFrom } from 'rxjs';
-=======
+
 import { firstValueFrom } from 'rxjs';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { BuildingComponent } from './component/building/building.component';
 import { DeptosComponent } from './component/deptos/deptos.component';
+import { IdentificateVendedorComponent } from './component/identificate-vendedor/identificate-vendedor.component';
+import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
 
->>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
+
 
 
 
 // Esto es un Array de objetos
 const appRoutes:Routes=[
   //Aca se deben defirnir y crear un objeto por cada ruta
-  { path: "Identificate", component: IdentificateComponent},
   { path: "NavBar", component: NavBar1Component },
   { path: "Footer",component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
@@ -73,7 +62,7 @@ const appRoutes:Routes=[
   { path: "Admin/Secundario/Registro", component: Registro2Component },
   { path: "Comprador", component: CompradorComponent },
   { path: "Comprador/Login", component: Login3Component },
-  { path: "Comprador/Registro", component: Registro3Component },
+ // { path: "Comprador/Registro", component: Registro3Component },
   { path: "Hombre", component: HombreComponent },
   { path: "Hombre/Ninho", component: NinhoComponent },
   { path: "Mujer", component: MujerComponent },
@@ -86,16 +75,12 @@ const appRoutes:Routes=[
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-<<<<<<< HEAD
-  { path: '', component: InicioComponent},
-  
-=======
   { path: "Inicio", component: InicioComponent},
   { path: "Deptos",component: DeptosComponent},
-  {path:"Build",component: BuildingComponent},
->>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
-
-
+  { path: "Build",component: BuildingComponent},
+  { path: "Accesorios",component: AccesoriosComponent},
+  { path: "IdentificateCliente", component: IdentificateClienteComponent},
+  { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
 ];
 
 @NgModule({
@@ -118,7 +103,7 @@ const appRoutes:Routes=[
     Login2Component,
     Registro2Component,
     Login3Component,
-    Registro3Component,
+    //Registro3Component,
     Login4Component,
     Registro4Component,
     SecundarioComponent,
@@ -126,12 +111,16 @@ const appRoutes:Routes=[
     CompradorComponent,
     Page404Component,
     FooterComponent,
-    IdentificateComponent,
     AccesoriosComponent,
     BuildingComponent,
     DeptosComponent,
     BuildingComponent,
-    DeptosComponent
+    DeptosComponent,
+    AdminComponent,
+    IdentificateVendedorComponent,
+    IdentificateClienteComponent,
+
+
 
   ],
   imports: [
