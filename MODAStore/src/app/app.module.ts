@@ -77,7 +77,7 @@ const appRoutes:Routes=[
   { path: "Novedades", component: NovedadesComponent },
   { path: "Ofertas", component: OfertasComponent },
   { path: "Outlet", component: OutletComponent },
-  { path: "Error", component: Page404Component },
+ // { path: "Error", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
