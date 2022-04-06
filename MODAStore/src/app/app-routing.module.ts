@@ -1,3 +1,4 @@
+import { SantaCruzComponent } from './component/deptos/santa-cruz/santa-cruz.component';
 import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { NgModule, Component } from '@angular/core';
@@ -32,6 +33,8 @@ import { BeniComponent } from './component/deptos/beni/beni.component';
 import { CochabambaComponent } from './component/deptos/cochabamba/cochabamba.component';
 import { PandoComponent } from './component/deptos/pando/pando.component';
 import { TarijaComponent } from './component/deptos/tarija/tarija.component';
+import { PotosiComponent } from './component/deptos/potosi/potosi.component';
+
 
 const routes: Routes = [
 
@@ -67,7 +70,7 @@ const routes: Routes = [
   { path: "Deptos/Beni", component: BeniComponent },
   { path: "Deptos/Cochabamba", component: CochabambaComponent},
   { path: "Deptos/Tarija", component: TarijaComponent},
-
+  { path: "Deptos/Potosi", component: PotosiComponent },
 
 ];
 
