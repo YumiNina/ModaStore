@@ -50,7 +50,7 @@ body {
 #advanced-search-form .form-control {
     padding: 12px 20px;
     height: auto;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 #advanced-search-form .radio-inline {
@@ -59,7 +59,7 @@ body {
 }
 
 #advanced-search-form .gender {
-    width: 30%;
+    width: 100%;
     margin-top: 30px;
     padding-left: 20px;
     padding-top: 5px;

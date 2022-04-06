@@ -1,3 +1,4 @@
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { FooterComponent } from './component/footer/footer.component';
@@ -26,6 +27,7 @@ describe('AppComponent', () => {
         VendedorComponent,
         Registro4Component,
         Login4Component,
+        DepartamentosComponent,
       ],
     }).compileComponents();
   });
