@@ -50,6 +50,7 @@ import { IdentificateComponent } from './component/identificate/identificate.com
 import { firstValueFrom } from 'rxjs';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { BuildingComponent } from './component/building/building.component';
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
 
 
 
@@ -119,6 +120,7 @@ const appRoutes:Routes=[
     IdentificateComponent,
     AccesoriosComponent,
     BuildingComponent,
+    DepartamentosComponent,
 
   ],
   imports: [
