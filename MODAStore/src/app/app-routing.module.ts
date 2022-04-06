@@ -34,7 +34,7 @@ import { CochabambaComponent } from './component/deptos/cochabamba/cochabamba.co
 import { PandoComponent } from './component/deptos/pando/pando.component';
 import { TarijaComponent } from './component/deptos/tarija/tarija.component';
 import { PotosiComponent } from './component/deptos/potosi/potosi.component';
-
+import { TodosComponent } from './component/deptos/todos/todos.component';
 
 const routes: Routes = [
 
@@ -71,7 +71,7 @@ const routes: Routes = [
   { path: "Deptos/Cochabamba", component: CochabambaComponent},
   { path: "Deptos/Tarija", component: TarijaComponent},
   { path: "Deptos/Potosi", component: PotosiComponent },
-
+  { path: "Deptos/Todos", component: TodosComponent },
 ];
 
 

@@ -93,8 +93,8 @@ const appRoutes:Routes=[
   { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
   { path: "Deptos/Beni", component: BeniComponent},
   { path: "Deptos/Cochabamba", component: CochabambaComponent},
-  { path: "Deptos/Tarija", component: TarijaComponent}
-
+  { path: "Deptos/Tarija", component: TarijaComponent},
+  { path: "Deptos/Todos", component: TodosComponent}
 ];
 
 @NgModule({
