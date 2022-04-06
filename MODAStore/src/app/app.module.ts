@@ -119,7 +119,7 @@ const appRoutes:Routes=[
     IdentificateComponent,
     AccesoriosComponent,
     BuildingComponent,
-
+    
   ],
   imports: [
 
