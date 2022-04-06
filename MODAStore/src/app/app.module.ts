@@ -43,6 +43,16 @@ import { BuildingComponent } from './component/building/building.component';
 import { DeptosComponent } from './component/deptos/deptos.component';
 import { IdentificateVendedorComponent } from './component/identificate-vendedor/identificate-vendedor.component';
 import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
+import { LaPazComponent } from './component/deptos/la-paz/la-paz.component';
+import { CochabambaComponent } from './component/deptos/cochabamba/cochabamba.component';
+import { SantaCruzComponent } from './component/deptos/santa-cruz/santa-cruz.component';
+import { TarijaComponent } from './component/deptos/tarija/tarija.component';
+import { PotosiComponent } from './component/deptos/potosi/potosi.component';
+import { PandoComponent } from './component/deptos/pando/pando.component';
+import { BeniComponent } from './component/deptos/beni/beni.component';
+import { OruroComponent } from './component/deptos/oruro/oruro.component';
+import { ChuquisacaComponent } from './component/deptos/chuquisaca/chuquisaca.component';
+import { TodosComponent } from './component/deptos/todos/todos.component';
 
 
 
@@ -81,6 +91,10 @@ const appRoutes:Routes=[
   { path: "Accesorios",component: AccesoriosComponent},
   { path: "IdentificateCliente", component: IdentificateClienteComponent},
   { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
+  { path: "Deptos/Beni", component: BeniComponent},
+  { path: "Deptos/Cochabamba", component: CochabambaComponent},
+  { path: "Deptos/Tarija", component: TarijaComponent}
+
 ];
 
 @NgModule({
@@ -119,6 +133,16 @@ const appRoutes:Routes=[
     AdminComponent,
     IdentificateVendedorComponent,
     IdentificateClienteComponent,
+    LaPazComponent,
+    CochabambaComponent,
+    SantaCruzComponent,
+    TarijaComponent,
+    PotosiComponent,
+    PandoComponent,
+    BeniComponent,
+    OruroComponent,
+    ChuquisacaComponent,
+    TodosComponent,
 
 
 

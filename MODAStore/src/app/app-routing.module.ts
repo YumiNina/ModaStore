@@ -28,6 +28,10 @@ import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { DeptosComponent } from './component/deptos/deptos.component';
 import { IdentificateVendedorComponent } from './component/identificate-vendedor/identificate-vendedor.component';
+import { BeniComponent } from './component/deptos/beni/beni.component';
+import { CochabambaComponent } from './component/deptos/cochabamba/cochabamba.component';
+import { PandoComponent } from './component/deptos/pando/pando.component';
+import { TarijaComponent } from './component/deptos/tarija/tarija.component';
 
 const routes: Routes = [
 
@@ -60,8 +64,9 @@ const routes: Routes = [
   { path: "Accesorios", component: AccesoriosComponent},
   { path: "IdentificateCliente", component: IdentificateClienteComponent},
   { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
-
-
+  { path: "Deptos/Beni", component: BeniComponent },
+  { path: "Deptos/Cochabamba", component: CochabambaComponent},
+  { path: "Deptos/Tarija", component: TarijaComponent},
 
 
 ];
