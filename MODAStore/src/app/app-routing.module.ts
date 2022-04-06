@@ -27,6 +27,7 @@ import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
 
 const routes: Routes = [
   { path: "Identificate", component: IdentificateComponent},
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
   { path: "Iniciar", component: InicioComponent},
+  { path:"Departamentos", component: DepartamentosComponent},
 
 
 
