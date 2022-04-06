@@ -83,7 +83,7 @@ const appRoutes:Routes=[
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
   { path: "Iniciar", component: InicioComponent},
-
+  { path: "Departamentos", component: DepartamentosComponent },
 
 
 

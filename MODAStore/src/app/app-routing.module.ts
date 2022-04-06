@@ -1,5 +1,6 @@
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
 
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
 import { Login1Component } from "./component/admin/principal/login1/Login1Component";
@@ -54,9 +55,8 @@ const routes: Routes = [
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: "Iniciar", component: InicioComponent}
-
-
+  { path: "Iniciar", component: InicioComponent},
+  { path: "Departamentos", component: DepartamentosComponent },
 
 ];
 
