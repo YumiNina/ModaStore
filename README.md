@@ -7,7 +7,7 @@
 
 *- Gael Aracely Condori Tipola*
 
-*- Eliana Vargas Rojas 100'*
+*- Eliana Vargas Rojas *
 
 *- Jose Pozo Silva*
 
