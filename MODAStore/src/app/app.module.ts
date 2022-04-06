@@ -142,6 +142,7 @@ const appRoutes:Routes=[
     BeniComponent,
     OruroComponent,
     ChuquisacaComponent,
+    CochabambaComponent,
     TodosComponent,
 
 
