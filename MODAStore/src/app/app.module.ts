@@ -1,4 +1,3 @@
-
 /* Imports por defecto de angular*/
 import { NgModule} from '@angular/core';
 
@@ -50,6 +49,7 @@ import { IdentificateComponent } from './component/identificate/identificate.com
 import { firstValueFrom } from 'rxjs';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { BuildingComponent } from './component/building/building.component';
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
 
 
 
@@ -119,7 +119,8 @@ const appRoutes:Routes=[
     IdentificateComponent,
     AccesoriosComponent,
     BuildingComponent,
-    
+    DepartamentosComponent,
+
   ],
   imports: [
 
@@ -143,4 +144,3 @@ export class AppModule {
 function routes(routes: any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
   throw new Error('Function not implemented.');
 }
-
