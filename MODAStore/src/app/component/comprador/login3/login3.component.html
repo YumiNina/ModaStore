@@ -1,1 +1,41 @@
-<p>login works!</p>
+
+<section id="Onlogin3" class="mb-5">
+    <div class="container">
+    <div class=" row">
+       
+         <div class="col-xs-12 col-sm-6 col-md-4 mx-auto"> 
+         <div class="card_login3">
+         <div class="card">
+        <div class="card-body text-center">
+            <form #formLogin3="ngForm" (ngSubmit)="OnLogin3(formLogin3)"> 
+                <h1 class="h3 mb-3 font-weight-normal" >Login comprador</h1>
+                <div class=" alert alert-danger" role="alert" *ngIf="!isError">
+                 Error en el ingreso de datos! 
+                </div>
+                <div class="form-group">
+                    <input type ="number" id="carnet de identidad" name="carnet de identidad" class="form-control"
+                    placeholder=" ci" [(ngModel)]="Comprador.ci"required>  
+                </div>  
+                <div class="form-group">
+                    <input type ="password" id="password" name="password" class="form-control"
+                    placeholder=" password"[(ngModel)]="Comprador.password" required>  
+    
+               
+             <button type="submit" class="btn btn-lg primary btn-block">Ingresar</button>
+               <div class="form-group">
+                   <a routerLink="/comprador/registro3" class="form-control login3-comprador ">¿Deseas crear una cuenta?</a> 
+               </div>  
+            </div>
+    
+            </form> 
+        </div>
+         
+    
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+    </section>
+    

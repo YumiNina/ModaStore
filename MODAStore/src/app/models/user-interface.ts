@@ -1,12 +1,12 @@
 export interface UserInterface {
-    id ?: String;
-    nombre?:String;
-    apellido?:string;
-    ci?:number;
-    contrasena?:string;
-    email?:string;
-    celular?:number;
-    ciudad?:string;
-    direccion?:string;
+    id: string;
+    nombre:string;
+    apellido:string;
+    ci:string;
+    password:string;
+    email:string;
+    celular:string;
+    ciudad:string;
+    direccion:string;
 }
 

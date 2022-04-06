@@ -36,7 +36,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
 import { Login3Component } from './component/comprador/login3/login3.component';
-import { Registro3Component } from './component/comprador/registro3/registro3.component';
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { InicioComponent } from './component/inicio/inicio.component';
@@ -47,7 +46,8 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
 
 //import { RegistrateComponent } from './Identificate/registrate/registrate.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
-import { firstValueFrom } from 'rxjs';
+import { Registro3Component } from './component/comprador/registro3/Registro3.component';
+//import { firstValueFrom } from 'rxjs';
 
 
 
@@ -79,7 +79,8 @@ const appRoutes:Routes=[
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: '', component: InicioComponent}
+  { path: '', component: InicioComponent},
+  
 
 
 ];

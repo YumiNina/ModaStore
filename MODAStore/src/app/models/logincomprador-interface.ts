@@ -1,5 +1,5 @@
-export interface loginComprador {
-ci?: number;
-contraseña?: string,
+export interface loginCompradorInterface {
+    ci:string ;
+    password: string;
 
 }

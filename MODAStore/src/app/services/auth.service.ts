@@ -2,9 +2,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/observable';
 import { HttpClient, HttpHeaders, JsonpClientBackend } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { isNullOrUndefined } from 'util';
-import { isNull, nullSafeIsEquivalent, NULL_EXPR, TYPED_NULL_EXPR } from '@angular/compiler/src/output/output_ast';
+//import { isNullOrUndefined } from 'util';
 import { UserInterface } from '../models/user-interface';
+import { isNull, isNullOrUndefined } from 'util';
+import { Login3Component } from './../component/comprador/login3/login3.component';
+import { NullVisitor } from '@angular/compiler/src/render3/r3_ast';
+import { loginCompradorInterface } from 'src/app/models/logincomprador-interface';
 
 @Injectable({
 
@@ -13,21 +16,23 @@ import { UserInterface } from '../models/user-interface';
 })
 
 export class AuthService {
-  constructor(private http: HttpClient) { }
+  static registro3comprador: any;
+  
+    constructor(private htttp: HttpClient) { }
   headers: HttpHeaders = new HttpHeaders({
     "Content-Type": " application/json"
   });
 
-  compradorregistro3(nombre: string, apellido: string, ci: number, contraseña: string, email: string, celular: number, ciudad: string, direccion: string) {
+  registro3comprador(nombre: string, apellido: string, ci: string,password: string, email: string, celular: string, ciudad: string, direccion: string) {
     const url_api = "http://localhost:3000/api/registro3";
-    return this.http
+    return this.htttp
       .post<UserInterface>(
         url_api,
         {
           nombre: nombre,
           apellido: apellido,
           ci: ci,
-          contraseña: contraseña,
+          password: password,
           email: email,
           celular: celular,
           ciudad: ciudad,
@@ -37,49 +42,44 @@ export class AuthService {
       )
       .pipe(map(data => data));
   }
-  compradorlogin3(ci: number, contraseña: string): Observable<any> {
+  login3comprador(ci: string, password: string): Observable<any> {
     const url_api = "http://localhost:3000/api/comprador/login3?include=user";
-    return this.http
+    return this.htttp
       .post<UserInterface>(
         url_api,
-        { ci, contraseña },
+        { ci, password},
         { headers: this.headers }
       )
       .pipe(map(data => data));
   }
-  setcomprador(comprador: UserInterface): void {
-    let comprador_string = JSON.stringify(comprador);
+  setComprador(Comprador: UserInterface):void {
+    let comprador_string = JSON.stringify(Comprador);
     localStorage.setItem("currentUser", comprador_string);
   }
-//  setToken(token): void {
-  //  localStorage.setItem("accessToken", token);
-//  }
+setToken(token: string) :void{
+    localStorage.setItem("accessToken", token);
+}
 
   getToken() {
     return localStorage.getItem("accessToken");
   }
-
-  getCurrentComprador():UserInterface {
-    let comprador_string = localStorage.getItem("currentUser");
-    if (!isNullOrUndefined(comprador_string)) {
-      let comprador: UserInterface = JSON.parse(comprador_string);
-      return comprador;
+/*
+  getCurrentUser():UserInterface {
+    let user_string = localStorage.getItem("currentUser");
+    if (!isNullOrUndefined(user_string)) {
+      let user: UserInterface = JSON.parse(user_string);
+      return user;
+    }else{
+      return null;
     }
-    else {
-  
-    
-          return null;
-
-        }
-
   }
-
-  logoutComprador(): Observable<UserInterface> {
+  */
+  logoutComprador() {
     let accessToken = localStorage.getItem("accessToken");
     const url_api = `http://localhost:3000/api/comprador/logout?access_token=${accessToken}`;
     localStorage.removeItem("accessToken");
     localStorage.removeItem("currentUser");
-    return this.http.post<UserInterface>(url_api, { headers: this.headers });
+    return this.htttp.post<UserInterface>(url_api, { headers: this.headers });
   }
 }
 

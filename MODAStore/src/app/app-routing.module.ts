@@ -19,7 +19,7 @@ import { UnisexComponent } from './component/unisex/unisex.component';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
 import { Login3Component } from './component/comprador/login3/login3.component';
-import { Registro3Component } from './component/comprador/registro3/registro3.component';
+
 import { Login4Component } from './component/vendedor/login4/login4.component';
 import { Registro4Component } from './component/vendedor/registro4/registro4.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
@@ -27,6 +27,7 @@ import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
+import { Registro3Component } from './component/comprador/registro3/Registro3.component';
 
 const routes: Routes = [
   { path: "Identificate", component: IdentificateComponent},
@@ -34,14 +35,14 @@ const routes: Routes = [
   { path: "Footer",component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
   { path: "Admin/Principal", component: PrincipalComponent },
-  { path: "Admin/Principal/Login", component: Login1Component },
-  { path: "Admin/Principal/Registro", component: Registro1Component },
+  { path: "Admin/Principal/Login1", component: Login1Component },
+  { path: "Admin/Principal/Registro1", component: Registro1Component },
   { path: "Admin/Secundario", component: SecundarioComponent },
-  { path: "Admin/Secundario/Login", component: Login2Component },
-  { path: "Admin/Secundario/Registro", component: Registro2Component },
+  { path: "Admin/Secundario/Login2", component: Login2Component },
+  { path: "Admin/Secundario/Registro2", component: Registro2Component },
   { path: "Comprador", component: CompradorComponent },
-  { path: "Comprador/Login", component: Login3Component },
-  { path: "Comprador/Registro", component: Registro3Component },
+  { path: "Comprador/Login3", component: Login3Component },
+  { path: "Comprador/Registro3", component: Registro3Component },
   { path: "Hombre", component: HombreComponent },
   { path: "Hombre/Ninho", component: NinhoComponent },
   { path: "Mujer", component: MujerComponent },
@@ -52,8 +53,8 @@ const routes: Routes = [
   { path: "**", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
-  { path: "Vendedor/Login", component: Login4Component },
-  { path: "Vendedor/Registro", component: Registro4Component },
+  { path: "Vendedor/Login4", component: Login4Component },
+  { path: "Vendedor/Registro4", component: Registro4Component },
   { path: '', component: InicioComponent}
 
 

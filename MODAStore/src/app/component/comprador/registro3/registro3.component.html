@@ -1,55 +1,95 @@
-<section id=" registro" class="mb-5">
+
+<section id="Registro3" class="mb-5">
 <div class="container">
 <div class=" row">
+   
      <div class="col-xs-12 col-sm-6 col-md-4 mx-auto"> 
-     <div class="card_register">
+     <div class="card_registro3">
      <div class="card">
     <div class="card-body text-center">
-        <form action=""> 
+        <form #formRegistro3="ngForm" (ngSubmit)="OnRegistro3(formRegistro3)"> 
             <h1 class="h3 mb-3 font-weight-normal" >Registro</h1>
+            <div class=" alert alert-danger" role="alert" *ngIf=" isError">
+               {{msgError}} 
+             </div>
             <div class="form-group">
-                <input type =" text" id="name" name="nombre" class="form-control"
-                placeholder=" name" required>  
-
+                <input type =" text" #nombre="ngModel" name="nombre" class="form-control"
+                placeholder=" name" [(ngModel)]="Comprador.nombre" required minlength="4" maxlength="20" >  
             </div>
+                <div class=" alert alert-danger" role="alert" *ngIf="nombre.touched && !nombre.valid ">
+                   <div *ngIf="['nombre.errors.required']">Ingrese un nombre </div>
+                   <div *ngIf="['nombre.errors.minlength']">Debe ser un minimo de 4 letras </div>   
+                </div>
+            
             <div class="form-group">
-                <input type =" text" id="apellido" name="apellido" class="form-control"
-                placeholder="apellido" required>  
+                <input type =" text" #apellido="ngModel" name="apellido" class="form-control"
+                placeholder="apellido" [(ngModel)]=" Comprador.apellido "required minlength="5" maxlength="20">  
 
             </div> 
+            <div class=" alert alert-danger" role="alert" *ngIf="apellido.touched && !apellido.valid ">
+                <div *ngIf="['apellido.errors.required']" >Ingrese un apellido</div>
+                <div *ngIf="['apellido.errors.minlength']">Debe ser un minimo de 5 letras </div>   
+             </div>
             <div class="form-group">
-                <input type ="number" id="carnet de identidad" name="carnet de identidad" class="form-control"
-                placeholder=" ci" required>  
+                <input type ="number" #ci="ngModel" name="carnet de identidad" class="form-control"
+                placeholder=" ci" [(ngModel)]="Comprador.ci"required minlength="6" maxlength="10">  
 
             </div>  
+            <div class=" alert alert-danger" role="alert" *ngIf="ci.touched && !ci.valid ">
+                <div *ngIf="['ci.errors.required']" >Ingrese su numero de identificacion</div>
+                <div *ngIf="['ci.errors.minlength']">Debe ser un minimo de 6 caracteres</div>   
+             </div>
             <div class="form-group">
-                <input type ="password" id="contraseña" name="contraseña" class="form-control"
-                placeholder=" contraseña" required>  
+                <input type ="password" #password="ngModel" name="password" class="form-control"
+                placeholder=" password"[(ngModel)]="Comprador.password" required minlength="8" maxlength="15">  
 
             </div>
+            <div class=" alert alert-danger" role="alert" *ngIf="password.touched && !password.valid ">
+                <div *ngIf="['password.errors.required']">Ingrese una contraseña </div>
+                <div *ngIf="['password.errors.minlength']">Debe ser un minimo de 8 caracteres la contraseña</div>   
+             </div>
             <div class="form-group">
-                <input type ="email" id="email" name="email" class="form-control"
-                placeholder="email" required>  
+                <input type ="email" #email="ngModel" name="email" class="form-control"
+                placeholder="email" [(ngModel)]="Comprador.email" required minlength="10" maxlength="20">  
 
             </div>
+            <div class=" alert alert-danger" role="alert" *ngIf="email.touched && !email.valid ">
+                <div *ngIf="['email.errors.required']">Ingrese un correo electronico </div>
+                <div *ngIf="['email.errors.minlength']">Debe ser un minimo de 10 caracteres </div>   
+             </div>
 
             <div class="form-group">
-                <input type ="number" id="celular" name="celular" class="form-control"
-                placeholder="celular" required>  
+                <input type ="number" #celular="ngModel" name="celular" class="form-control"
+                placeholder="celular" [(ngModel)]="Comprador.celular"required minlength="8" maxlength="8">  
 
             </div>
+            <div class=" alert alert-danger" role="alert" *ngIf="celular.touched && !celular.valid ">
+                <div *ngIf="['celular.errors.required']">Ingrese un numero de celular </div>
+                <div *ngIf="['celular.errors.minlength']">Debe ser un minimo de 8 digitos </div>   
+             </div>
+
             <div class="form-group">
-                <input type ="text" id="ciudad" name="ciudad" class="form-control"
-                placeholder="ciudad" required>  
+                <input type ="text" #ciudad="ngModel" name="ciudad" class="form-control"
+                placeholder="ciudad" [(ngModel)]="Comprador.ciudad"required  minlength="5" maxlength="12">  
 
             </div>
+            <div class=" alert alert-danger" role="alert" *ngIf="ciudad.touched && !ciudad.valid ">
+                <div *ngIf="['ciudad.errors.required']">Debe Ingresar la ciudad </div>
+                <div *ngIf="['ciudad.errors.minLength']">Ingresar la ciudad en la que se encuentra </div>   
+             </div>
+
             <div class="form-group">
-                <input type ="text" id="direccion" name="direccion" class="form-control"
-                placeholder="direccion" required>  
+                <input type ="text" #direccion="ngModel" name="direccion" class="form-control"
+                placeholder="direccion"[(ngModel)]="Comprador.direccion" required minlength="10" maxlength="20">  
             </div>
+            <div class=" alert alert-danger" role="alert" *ngIf="direccion.touched && !direccion.valid ">
+                <div *ngIf="['direccion.errors.required']">Debe Ingresar su direccion </div>
+                <div *ngIf="['direccion.errors.minlength']">Ingresar un minimo de 10 caracteres </div>   
+             </div>
+            
          <button type="submit" class="btn btn-lg primary btn-block">registrar</button>
            <div class="form-group">
-               <a routerLink="/comprador/login3" class="form-control ">¿Ya tienes una cuenta?</a> 
+               <a routerLink="/comprador/login3" class="form-control login3-comprador ">¿Ya tienes una cuenta?</a> 
 
 
            </div>  
