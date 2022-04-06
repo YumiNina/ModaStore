@@ -64,6 +64,7 @@ setToken(token: string) :void{
     return localStorage.getItem("accessToken");
   }
 /*
+<<<<<<< HEAD
   getCurrentUser():UserInterface {
     let user_string = localStorage.getItem("currentUser");
     if (!isNullOrUndefined(user_string)) {
@@ -75,12 +76,38 @@ setToken(token: string) :void{
   }
   */
   logoutComprador() {
+=======
+  getCurrentComprador():UserInterface {
+    let comprador_string = localStorage.getItem("currentUser");
+    if (!isNullOrUndefined(comprador_string)) {
+      let comprador: UserInterface = JSON.parse(comprador_string);
+      return comprador;
+    }
+    else {
+
+
+          return null;
+
+        }
+
+  }*/
+
+  logoutComprador(): Observable<UserInterface> {
+>>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
     let accessToken = localStorage.getItem("accessToken");
     const url_api = `http://localhost:3000/api/comprador/logout?access_token=${accessToken}`;
     localStorage.removeItem("accessToken");
     localStorage.removeItem("currentUser");
     return this.htttp.post<UserInterface>(url_api, { headers: this.headers });
   }
+
+  /*getPersona(){
+    return this.http.get<Persona[]> (this.Url);
+
+  }
+
+  CreatePersona(persona:Persona){
+    return this.http.post<Persona>(this.Url,persona)}*/
 }
 
 

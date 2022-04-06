@@ -1,3 +1,6 @@
+import { DepartamentosComponent } from './component/departamentos/departamentos.component';
+import { Registro4Component } from './component/vendedor/registro4/registro4.component';
+import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { TestBed } from '@angular/core/testing';
@@ -6,6 +9,7 @@ import { from } from 'rxjs';
 
 
 import { InicioComponent} from "./component/inicio/inicio.component"
+import { Login4Component } from './component/vendedor/login4/login4.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -18,7 +22,12 @@ describe('AppComponent', () => {
        // AppComponent,
        InicioComponent,
         NavBar1Component,
-        FooterComponent
+        FooterComponent,
+        InicioComponent,
+        VendedorComponent,
+        Registro4Component,
+        Login4Component,
+        DepartamentosComponent,
       ],
     }).compileComponents();
   });

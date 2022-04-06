@@ -46,17 +46,21 @@ html {
     display: inline-block;
 }
 
-.Menu-Bar .Item {
+
+/*.Menu-Bar .Item {
     margin-top: 30px;
     margin-right: 20px;
     background-color: transparent;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.0rem;
     padding: 10px;
     float: right;
     display: flex;
     list-style: none;
 }
+*/
+
+
 
 
 /*
@@ -71,6 +75,7 @@ html {
     list-style: none;
     overflow: hidden;
 }
+
 */
 
 
@@ -81,6 +86,26 @@ html {
     color: white;
 }
 */
+
+.Identificate a {
+    color: white;
+    overflow: hidden;
+    list-style: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Menu-Bar .Identificate {
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px;
+    float: right;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
 
 .Item a {
     text-decoration: none;
@@ -106,7 +131,7 @@ html {
 
 .bar li {
     float: left;
-    padding-left: 5%;
+    padding-left: 4%;
 }
 
 .bar li a {
@@ -121,6 +146,29 @@ html {
     z-index: 21px;
 }
 
-.bar li a:hover {
-    background-color: #111;
+
+/* **********************************************************menu
+ desplegable */
+
+ .menuCSS3 ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menuCSS3 a {
+  display: block;
+  padding: 2em;
+  background-color: #F9B53C;
+  text-decoration: none;
+  color: #191C26;
+}
+.menuCSS3 a:hover {
+  background-color: #CC673B;
+}
+.menuCSS3 ul li ul {
+  display: none;
+}
+.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+  display: block;
 }

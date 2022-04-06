@@ -1,4 +1,3 @@
-
 /* Imports por defecto de angular*/
 import { NgModule} from '@angular/core';
 
@@ -46,8 +45,16 @@ import { DataApiMODASTOREService } from './services/data-api-modastore.service';
 
 //import { RegistrateComponent } from './Identificate/registrate/registrate.component';
 import { IdentificateComponent } from './component/identificate/identificate.component';
+<<<<<<< HEAD
 import { Registro3Component } from './component/comprador/registro3/Registro3.component';
 //import { firstValueFrom } from 'rxjs';
+=======
+import { firstValueFrom } from 'rxjs';
+import { AccesoriosComponent } from './component/accesorios/accesorios.component';
+import { BuildingComponent } from './component/building/building.component';
+import { DeptosComponent } from './component/deptos/deptos.component';
+
+>>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
 
 
 
@@ -74,13 +81,19 @@ const appRoutes:Routes=[
   { path: "Novedades", component: NovedadesComponent },
   { path: "Ofertas", component: OfertasComponent },
   { path: "Outlet", component: OutletComponent },
-  { path: "**", component: Page404Component },
+ // { path: "Error", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
+<<<<<<< HEAD
   { path: '', component: InicioComponent},
   
+=======
+  { path: "Inicio", component: InicioComponent},
+  { path: "Deptos",component: DeptosComponent},
+  {path:"Build",component: BuildingComponent},
+>>>>>>> 18c6f58105f0f48f8b55cb30b5d6d060ee3fe8ec
 
 
 ];
@@ -113,7 +126,12 @@ const appRoutes:Routes=[
     CompradorComponent,
     Page404Component,
     FooterComponent,
-    IdentificateComponent
+    IdentificateComponent,
+    AccesoriosComponent,
+    BuildingComponent,
+    DeptosComponent,
+    BuildingComponent,
+    DeptosComponent
 
   ],
   imports: [
@@ -138,4 +156,3 @@ export class AppModule {
 function routes(routes: any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
   throw new Error('Function not implemented.');
 }
-
