@@ -53,6 +53,7 @@ import { BeniComponent } from './component/deptos/beni/beni.component';
 import { OruroComponent } from './component/deptos/oruro/oruro.component';
 import { ChuquisacaComponent } from './component/deptos/chuquisaca/chuquisaca.component';
 import { TodosComponent } from './component/deptos/todos/todos.component';
+import { IdentificateAdminComponent } from './component/identificate-admin/identificate-admin.component';
 
 
 
@@ -94,7 +95,8 @@ const appRoutes:Routes=[
   { path: "Deptos/Beni", component: BeniComponent},
   { path: "Deptos/Cochabamba", component: CochabambaComponent},
   { path: "Deptos/Tarija", component: TarijaComponent},
-  { path: "Deptos/Todos", component: TodosComponent}
+  { path: "Deptos/Todos", component: TodosComponent},
+  { path: "IdentificateAdmin", component: IdentificateAdminComponent},
 ];
 
 @NgModule({
@@ -144,6 +146,7 @@ const appRoutes:Routes=[
     ChuquisacaComponent,
     CochabambaComponent,
     TodosComponent,
+    IdentificateAdminComponent,
 
 
 
