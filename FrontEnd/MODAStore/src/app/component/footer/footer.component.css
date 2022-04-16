@@ -43,3 +43,7 @@ a:focus {
 footer {
     background: #212529;
 }
+
+.form-control {
+    color: #fff;
+}
