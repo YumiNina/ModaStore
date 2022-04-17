@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 /* Import Router */
 import { RouterModule, Routes } from '@angular/router';
 /*Imports propios del proyecto */
+import { AppComponent } from './app.component';
 import { NavBar1Component } from './component/nav-bar1/nav-bar1.component';
 import { NovedadesComponent } from './component/novedades/novedades.component';
 import { MujerComponent } from './component/mujer/mujer.component';
@@ -62,6 +63,7 @@ import { IdentificateAdminComponent } from './component/identificate-admin/ident
 // Esto es un Array de objetos
 const appRoutes:Routes=[
   //Aca se deben defirnir y crear un objeto por cada ruta
+  { path: "main",  component: AppComponent},
   { path: "NavBar", component: NavBar1Component },
   { path: "Footer",component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
@@ -147,6 +149,7 @@ const appRoutes:Routes=[
     CochabambaComponent,
     TodosComponent,
     IdentificateAdminComponent,
+    AppComponent,
 
 
 

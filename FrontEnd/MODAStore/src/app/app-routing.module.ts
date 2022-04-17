@@ -35,9 +35,11 @@ import { PandoComponent } from './component/deptos/pando/pando.component';
 import { TarijaComponent } from './component/deptos/tarija/tarija.component';
 import { PotosiComponent } from './component/deptos/potosi/potosi.component';
 import { TodosComponent } from './component/deptos/todos/todos.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
+  { path: "main",  component: AppComponent},
   { path: "NavBar", component: NavBar1Component },
   { path: "Footer",component: FooterComponent},
   { path: "Administrador", component: AdminComponent },

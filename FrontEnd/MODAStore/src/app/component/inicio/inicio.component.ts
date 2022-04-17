@@ -11,5 +11,5 @@ import { Router } from '@angular/router';
 
 
 export class InicioComponent {
-  title = 'MODAStore';
+  //title = 'MODAStore';
 }
