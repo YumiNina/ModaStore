@@ -2,7 +2,10 @@
 import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-//import { AppComponent } from "./app.component";
+//import { Ng5SliderModule } from 'ng5-slider';
+//import { NgxPermissionsModule } from 'ngx-permissions';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 /* imports de formularios de angular*/
 import { FormsModule } from '@angular/forms';
 /* Import Router */
@@ -36,7 +39,6 @@ import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 //services
 import { DataApiMODASTOREService } from './services/data-api-modastore.service';
-//import { RegistrateComponent } from './Identificate/registrate/registrate.component';
 
 import { firstValueFrom } from 'rxjs';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
@@ -55,6 +57,8 @@ import { OruroComponent } from './component/deptos/oruro/oruro.component';
 import { ChuquisacaComponent } from './component/deptos/chuquisaca/chuquisaca.component';
 import { TodosComponent } from './component/deptos/todos/todos.component';
 import { IdentificateAdminComponent } from './component/identificate-admin/identificate-admin.component';
+import { MainComponent } from './component/main/main.component';
+
 
 
 
@@ -63,42 +67,46 @@ import { IdentificateAdminComponent } from './component/identificate-admin/ident
 // Esto es un Array de objetos
 const appRoutes:Routes=[
   //Aca se deben defirnir y crear un objeto por cada ruta
-  { path: "main",  component: AppComponent},
-  { path: "NavBar", component: NavBar1Component },
-  { path: "Footer",component: FooterComponent},
-  { path: "Administrador", component: AdminComponent },
-  { path: "Admin/Principal", component: PrincipalComponent },
-  { path: "Admin/Principal/Login", component: Login1Component },
-  { path: "Admin/Principal/Registro", component: Registro1Component },
-  { path: "Admin/Secundario", component: SecundarioComponent },
-  { path: "Admin/Secundario/Login", component: Login2Component },
-  { path: "Admin/Secundario/Registro", component: Registro2Component },
-  { path: "Comprador", component: CompradorComponent },
-  { path: "Comprador/Login", component: Login3Component },
- // { path: "Comprador/Registro", component: Registro3Component },
-  { path: "Hombre", component: HombreComponent },
-  { path: "Hombre/Ninho", component: NinhoComponent },
-  { path: "Mujer", component: MujerComponent },
-  { path: "Mujer/Ninha", component: NinhaComponent },
-  { path: "Novedades", component: NovedadesComponent },
-  { path: "Ofertas", component: OfertasComponent },
-  { path: "Outlet", component: OutletComponent },
- // { path: "Error", component: Page404Component },
-  { path: "Unisex", component: UnisexComponent },
-  { path: "Vendedor", component: VendedorComponent },
-  { path: "Vendedor/Login", component: Login4Component },
-  { path: "Vendedor/Registro", component: Registro4Component },
-  { path: "Inicio", component: InicioComponent},
-  { path: "Deptos",component: DeptosComponent},
-  { path: "Build",component: BuildingComponent},
-  { path: "Accesorios",component: AccesoriosComponent},
-  { path: "IdentificateCliente", component: IdentificateClienteComponent},
-  { path: "IdentificateVendedor", component: IdentificateVendedorComponent},
-  { path: "Deptos/Beni", component: BeniComponent},
-  { path: "Deptos/Cochabamba", component: CochabambaComponent},
-  { path: "Deptos/Tarija", component: TarijaComponent},
-  { path: "Deptos/Todos", component: TodosComponent},
-  { path: "IdentificateAdmin", component: IdentificateAdminComponent},
+  { path: "main",  component: AppComponent, pathMatch: 'full' },
+  { path: '', component: InicioComponent, pathMatch: 'full'},
+  { path: 'NavBar', component: NavBar1Component, pathMatch: 'full'  },
+  { path: "Footer",component: FooterComponent, pathMatch: 'full' },
+  { path: "Administrador", component: AdminComponent, pathMatch: 'full'  },
+  { path: "Admin/Principal", component: PrincipalComponent, pathMatch: 'full'  },
+  { path: "Admin/Principal/Login", component: Login1Component, pathMatch: 'full'  },
+  { path: "Admin/Principal/Registro", component: Registro1Component, pathMatch: 'full'  },
+  { path: "Admin/Secundario", component: SecundarioComponent, pathMatch: 'full'  },
+  { path: "Admin/Secundario/Login", component: Login2Component, pathMatch: 'full'  },
+  { path: "Admin/Secundario/Registro", component: Registro2Component, pathMatch: 'full'  },
+  { path: "Comprador", component: CompradorComponent, pathMatch: 'full'  },
+  { path: "Comprador/Login", component: Login3Component, pathMatch: 'full'  },
+  { path: "Hombre", component: HombreComponent, pathMatch: 'full'  },
+  { path: "Hombre/Ninho", component: NinhoComponent, pathMatch: 'full'  },
+  { path: "Mujer", component: MujerComponent, pathMatch: 'full'  },
+  { path: "Mujer/Ninha", component: NinhaComponent, pathMatch: 'full'  },
+  { path: "Novedades", component: NovedadesComponent, pathMatch: 'full'  },
+  { path: "Ofertas", component: OfertasComponent, pathMatch: 'full'  },
+  { path: "Outlet", component: OutletComponent, pathMatch: 'full'  },
+  { path: "Unisex", component: UnisexComponent, pathMatch: 'full'  },
+  { path: "Vendedor", component: VendedorComponent, pathMatch: 'full'  },
+  { path: "Vendedor/Login", component: Login4Component, pathMatch: 'full'  },
+  { path: "Vendedor/Registro", component: Registro4Component, pathMatch: 'full'  },
+  { path: "Deptos",component: DeptosComponent, pathMatch: 'full' },
+  { path: "Build",component: BuildingComponent, pathMatch: 'full' },
+  { path: "Accesorios",component: AccesoriosComponent, pathMatch: 'full' },
+  { path: "IdentificateCliente", component: IdentificateClienteComponent, pathMatch: 'full' },
+  { path: "IdentificateVendedor", component: IdentificateVendedorComponent, pathMatch: 'full' },
+  { path: "Deptos/Beni", component: BeniComponent, pathMatch: 'full' },
+  { path: "Deptos/Cochabamba", component: CochabambaComponent, pathMatch: 'full' },
+  { path: "Deptos/Tarija", component: TarijaComponent, pathMatch: 'full' },
+  { path: "Deptos/Todos", component: TodosComponent, pathMatch: 'full' },
+  { path: "IdentificateAdmin", component: IdentificateAdminComponent,pathMatch: 'full'},
+
+
+
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+
+  
 ];
 
 @NgModule({
@@ -121,7 +129,6 @@ const appRoutes:Routes=[
     Login2Component,
     Registro2Component,
     Login3Component,
-    //Registro3Component,
     Login4Component,
     Registro4Component,
     SecundarioComponent,
@@ -150,29 +157,32 @@ const appRoutes:Routes=[
     TodosComponent,
     IdentificateAdminComponent,
     AppComponent,
+    MainComponent,
+
 
 
 
   ],
   imports: [
 
-
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule],
+    FormsModule,
+   
+    BrowserAnimationsModule,
+
+  ],
 
 
-  providers: [DataApiMODASTOREService],
-  bootstrap: [InicioComponent]// En esta linea se esta modificando el acceso a la ruta, es decir, a la pagina de incio
+  providers: [/*[DataApiMODASTOREService*/],
+  bootstrap: [AppComponent]// En esta linea se esta modificando el acceso a la ruta, es decir, a la pagina de incio
 })
 export class AppModule {
 
 
 }
 
-function routes(routes: any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
-  throw new Error('Function not implemented.');
-}
+

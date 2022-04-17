@@ -1,8 +1,8 @@
+import { Component, NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { SantaCruzComponent } from './component/deptos/santa-cruz/santa-cruz.component';
 import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
-import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './component/admin/admin.component';
 import { Login1Component } from "./component/admin/principal/login1/Login1Component";
 import { PrincipalComponent } from './component/admin/principal/principal.component';
@@ -16,7 +16,6 @@ import { NinhaComponent } from './component/mujer/ninha/ninha.component';
 import { NovedadesComponent } from './component/novedades/novedades.component';
 import { OfertasComponent } from './component/ofertas/ofertas.component';
 import { OutletComponent } from './component/outlet/outlet.component';
-//import { Page404Component } from './component/page404/page404.component';
 import { UnisexComponent } from './component/unisex/unisex.component';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
@@ -39,9 +38,10 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
+  { path: '/', component: InicioComponent},
   { path: "main",  component: AppComponent},
-  { path: "NavBar", component: NavBar1Component },
-  { path: "Footer",component: FooterComponent},
+  { path: 'NavBar', component: NavBar1Component },
+  { path: 'Footer',component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
   { path: "Admin/Principal", component: PrincipalComponent },
   { path: "Admin/Principal/Login1", component: Login1Component },
@@ -51,7 +51,6 @@ const routes: Routes = [
   { path: "Admin/Secundario/Registro2", component: Registro2Component },
   { path: "Comprador", component: CompradorComponent },
   { path: "Comprador/Login3", component: Login3Component },
- // { path: "Comprador/Registro3", component: Registro3Component },
   { path: "Hombre", component: HombreComponent },
   { path: "Hombre/Ninho", component: NinhoComponent },
   { path: "Mujer", component: MujerComponent },
@@ -59,7 +58,6 @@ const routes: Routes = [
   { path: "Novedades", component: NovedadesComponent },
   { path: "Ofertas", component: OfertasComponent },
   { path: "Outlet", component: OutletComponent },
-  //{ path: "**", component: Page404Component },
   { path: "Unisex", component: UnisexComponent },
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
@@ -74,12 +72,16 @@ const routes: Routes = [
   { path: "Deptos/Tarija", component: TarijaComponent},
   { path: "Deptos/Potosi", component: PotosiComponent },
   { path: "Deptos/Todos", component: TodosComponent },
+
+  
+
 ];
 
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 
 
 
