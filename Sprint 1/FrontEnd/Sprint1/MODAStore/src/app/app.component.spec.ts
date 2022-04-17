@@ -4,15 +4,17 @@ import { AppComponent } from './app.component';
 
 
 
-
 describe('AppComponent', () => {
   beforeEach(async () => {
      TestBed.configureTestingModule({
        imports:[
-       RouterTestingModule
+       RouterTestingModule,
+
       ] ,
          declarations: [
        AppComponent,
+
+
 
       ],
     }).compileComponents();
@@ -34,6 +36,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('# MODA STORE app is running');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('# MODA STORE');
   });
 });

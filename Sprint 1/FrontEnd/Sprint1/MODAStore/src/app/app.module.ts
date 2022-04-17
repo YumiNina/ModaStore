@@ -28,7 +28,6 @@ import { Registro1Component } from './component/admin/principal/registro1/regist
 import { SecundarioComponent } from './component/admin/secundario/secundario.component';
 import { VendedorComponent } from './component/vendedor/vendedor.component';
 import { CompradorComponent } from './component/comprador/comprador.component';
-import { Page404Component } from './component/page404/page404.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Login2Component } from './component/admin/secundario/login2/login2.component';
 import { Registro2Component } from './component/admin/secundario/registro2/registro2.component';
@@ -57,7 +56,7 @@ import { OruroComponent } from './component/deptos/oruro/oruro.component';
 import { ChuquisacaComponent } from './component/deptos/chuquisaca/chuquisaca.component';
 import { TodosComponent } from './component/deptos/todos/todos.component';
 import { IdentificateAdminComponent } from './component/identificate-admin/identificate-admin.component';
-import { MainComponent } from './component/main/main.component';
+import { MainComponent } from './main/main.component';
 
 
 
@@ -67,8 +66,8 @@ import { MainComponent } from './component/main/main.component';
 // Esto es un Array de objetos
 const appRoutes:Routes=[
   //Aca se deben defirnir y crear un objeto por cada ruta
-  { path: "main",  component: AppComponent, pathMatch: 'full' },
-  { path: '', component: InicioComponent, pathMatch: 'full'},
+  { path: 'main',  component: AppComponent, pathMatch: 'full' },
+  { path: "", component: InicioComponent, pathMatch: 'full'},
   { path: 'NavBar', component: NavBar1Component, pathMatch: 'full'  },
   { path: "Footer",component: FooterComponent, pathMatch: 'full' },
   { path: "Administrador", component: AdminComponent, pathMatch: 'full'  },
@@ -111,7 +110,6 @@ const appRoutes:Routes=[
 
 @NgModule({
    declarations: [
-
     InicioComponent,
     NavBar1Component,
     NovedadesComponent,
@@ -134,7 +132,7 @@ const appRoutes:Routes=[
     SecundarioComponent,
     VendedorComponent,
     CompradorComponent,
-    Page404Component,
+
     FooterComponent,
     AccesoriosComponent,
     BuildingComponent,
@@ -157,13 +155,14 @@ const appRoutes:Routes=[
     TodosComponent,
     IdentificateAdminComponent,
     AppComponent,
-    MainComponent,
-
-
-
-
+    MainComponent
   ],
   imports: [
+
+
+
+
+    
 
     BrowserModule,
     HttpClientModule,

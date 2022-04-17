@@ -22,9 +22,7 @@ this.authservice.logoutComprador();
 
 }
 
-  Identificate(){
-        this.router.navigate([IdentificateClienteComponent])
-  }
+
 
   }
 

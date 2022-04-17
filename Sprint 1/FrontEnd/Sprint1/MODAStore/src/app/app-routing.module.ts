@@ -1,6 +1,5 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SantaCruzComponent } from './component/deptos/santa-cruz/santa-cruz.component';
 import { IdentificateClienteComponent } from './component/identificate-cliente/identificate-cliente.component';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
 import { AdminComponent } from './component/admin/admin.component';
@@ -30,7 +29,6 @@ import { DeptosComponent } from './component/deptos/deptos.component';
 import { IdentificateVendedorComponent } from './component/identificate-vendedor/identificate-vendedor.component';
 import { BeniComponent } from './component/deptos/beni/beni.component';
 import { CochabambaComponent } from './component/deptos/cochabamba/cochabamba.component';
-import { PandoComponent } from './component/deptos/pando/pando.component';
 import { TarijaComponent } from './component/deptos/tarija/tarija.component';
 import { PotosiComponent } from './component/deptos/potosi/potosi.component';
 import { TodosComponent } from './component/deptos/todos/todos.component';
@@ -38,9 +36,10 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
-  { path: '/', component: InicioComponent},
-  { path: "main",  component: AppComponent},
+  { path: "", component: InicioComponent},
+  { path: 'm',  component: AppComponent},
   { path: 'NavBar', component: NavBar1Component },
+
   { path: 'Footer',component: FooterComponent},
   { path: "Administrador", component: AdminComponent },
   { path: "Admin/Principal", component: PrincipalComponent },
@@ -62,7 +61,6 @@ const routes: Routes = [
   { path: "Vendedor", component: VendedorComponent },
   { path: "Vendedor/Login", component: Login4Component },
   { path: "Vendedor/Registro", component: Registro4Component },
-  { path: "Iniciar", component: InicioComponent},
   { path: "Deptos", component: DeptosComponent},
   { path: "Accesorios", component: AccesoriosComponent},
   { path: "IdentificateCliente", component: IdentificateClienteComponent},
