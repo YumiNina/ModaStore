@@ -18,6 +18,10 @@ import { PotosiComponent } from './components/catalogo/potosi/potosi.component';
 import { TarijaComponent } from './components/catalogo/tarija/tarija.component';
 import { SucreComponent } from './components/catalogo/sucre/sucre.component';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ClienteLogInComponent } from './components/log-in/cliente-log-in/cliente-log-in.component';
+import { ClienteSignUpComponent } from './components/sign-up/cliente-sign-up/cliente-sign-up.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { LogInComponent } from './components/log-in/log-in.component';
     PotosiComponent,
     TarijaComponent,
     SucreComponent,
-    LogInComponent
+    LogInComponent,
+    ClienteLogInComponent,
+    ClienteSignUpComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
