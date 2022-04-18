@@ -17,6 +17,7 @@ import { OruroComponent } from './components/catalogo/oruro/oruro.component';
 import { PotosiComponent } from './components/catalogo/potosi/potosi.component';
 import { TarijaComponent } from './components/catalogo/tarija/tarija.component';
 import { SucreComponent } from './components/catalogo/sucre/sucre.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SucreComponent } from './components/catalogo/sucre/sucre.component';
     OruroComponent,
     PotosiComponent,
     TarijaComponent,
-    SucreComponent
+    SucreComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
