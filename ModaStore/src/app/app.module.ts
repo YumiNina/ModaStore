@@ -21,6 +21,10 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ClienteLogInComponent } from './components/log-in/cliente-log-in/cliente-log-in.component';
 import { ClienteSignUpComponent } from './components/sign-up/cliente-sign-up/cliente-sign-up.component';
+import { VendedorLogInComponent } from './components/log-in/vendedor-log-in/vendedor-log-in.component';
+import { VendedorSignUpComponent } from './components/sign-up/vendedor-sign-up/vendedor-sign-up.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminLogInComponent } from './components/admin/admin-log-in/admin-log-in.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { ClienteSignUpComponent } from './components/sign-up/cliente-sign-up/cli
     LogInComponent,
     ClienteLogInComponent,
     ClienteSignUpComponent,
-    SignUpComponent
+    SignUpComponent,
+    VendedorLogInComponent,
+    VendedorSignUpComponent,
+    AdminComponent,
+    AdminLogInComponent
   ],
   imports: [
     BrowserModule,
