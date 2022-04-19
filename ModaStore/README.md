@@ -18,7 +18,7 @@ El proyecto a desarrollar es un sistema web, el cual se encargará de la gestió
 
 **ALCANCES**
 
-El sistema WEb tendrá la capacidad de realizar inventarios de productos.
+El sistema WEb tendrá la capacidad de realizar reportes de los las compras y ventas
 Los clientes podrán acceder al sistema y realizar compras utilizando su cuenta de google.
 Los administradores podrán realizar peticiones de inventarios al sistema en el rango de fechas que desea.
 
