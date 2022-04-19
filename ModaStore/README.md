@@ -45,8 +45,7 @@ El proyecto a desarrollar es un sistema web, el cual se encargará de la gestió
 
 - Base de Datos: PostGresSQL
 
-puerto de activacion 5422
-PWD: you only live once"
+
 
 
 - Repositorio de Codigo: Github
