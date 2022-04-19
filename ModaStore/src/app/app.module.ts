@@ -17,6 +17,15 @@ import { OruroComponent } from './components/catalogo/oruro/oruro.component';
 import { PotosiComponent } from './components/catalogo/potosi/potosi.component';
 import { TarijaComponent } from './components/catalogo/tarija/tarija.component';
 import { SucreComponent } from './components/catalogo/sucre/sucre.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ClienteLogInComponent } from './components/log-in/cliente-log-in/cliente-log-in.component';
+import { ClienteSignUpComponent } from './components/sign-up/cliente-sign-up/cliente-sign-up.component';
+import { VendedorLogInComponent } from './components/log-in/vendedor-log-in/vendedor-log-in.component';
+import { VendedorSignUpComponent } from './components/sign-up/vendedor-sign-up/vendedor-sign-up.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminLogInComponent } from './components/admin/admin-log-in/admin-log-in.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +42,15 @@ import { SucreComponent } from './components/catalogo/sucre/sucre.component';
     OruroComponent,
     PotosiComponent,
     TarijaComponent,
-    SucreComponent
+    SucreComponent,
+    LogInComponent,
+    ClienteLogInComponent,
+    ClienteSignUpComponent,
+    SignUpComponent,
+    VendedorLogInComponent,
+    VendedorSignUpComponent,
+    AdminComponent,
+    AdminLogInComponent
   ],
   imports: [
     BrowserModule,

@@ -12,21 +12,21 @@
  **********************************************************************************************************************************************************
 **DESCRIPCIÓN**
 
-El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de inventario  y  venta de prendas en la tienda.
+El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de reportes  y  venta de prendas en la tienda.
 
 ***********************************************************************************************************************************************************
 
 **ALCANCES**
 
-El sistema WEb tendrá la capacidad de realizar inventarios de productos.
+El sistema WEb tendrá la capacidad de realizar reportes de los las compras y ventas
 Los clientes podrán acceder al sistema y realizar compras utilizando su cuenta de google.
-Los administradores podrán realizar peticiones de inventarios al sistema en el rango de fechas que desea.
+Los administradores podrán realizar peticiones de reportes al sistema en el rango de fechas que desea.
 
 ********************************************************************************************************************************************************
 
 **LIMITES**
 
-El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de inventario  y  venta de prendas en la tienda.
+El proyecto a desarrollar es un sistema web, el cual se encargará de la gestión de las prendas de vestir en la tienda #Moda Store.  El sistema realizará la gestión de clientes , usuarios  administradores, control de reportes de prendas  y  venta de prendas en la tienda.
 
 *******************************************************************************************************************************************************
 **HERRAMIENTAS**
@@ -43,7 +43,10 @@ El proyecto a desarrollar es un sistema web, el cual se encargará de la gestió
 - Framework Fronted: Angular , CSS
 
 
-- Base de Datos: MySQL
+- Base de Datos: PostGresSQL
+
+puerto de activacion 5422
+PWD: you only live once"
 
 
 - Repositorio de Codigo: Github
