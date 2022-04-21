@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-log-in',
@@ -8,9 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AdminLogInComponent implements OnInit {
 
- 
-
-  constructor( private router:Router, private activatedRoute:ActivatedRoute ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
